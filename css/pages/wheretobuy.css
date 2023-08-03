@@ -1,0 +1,84 @@
+.App .container-body {
+    min-width: 100vw;
+}
+
+.body-container-footer {
+  height: 26.09vw;
+  margin-top: 9.375vw;
+  padding-top: 2.6vw;
+  position: relative;
+  background-color: var(--orange-color);
+  z-index: 1;
+  position: relative;
+}
+
+.body-container-footer p {
+    cursor: url("../../images/components/body/cursor-2.png"), auto !important;
+}
+
+.body-container-footer #footerFlow {
+  position: absolute;
+  top: -7.8125vw;
+}
+
+.body-container-footer div p {
+    font-size: 1.146vw;
+    font-family: "Pretendard-Bold";
+}
+
+.body-container-footer-select-box {
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 3px;
+    height: 1.5625vw;
+    margin-top: 1.5625vw;
+    font-family: "Pretendard-Light";
+}
+
+.body-container-footer-logo-img {
+    margin-bottom: 1.823vw;
+    cursor: url("../../images/components/body/cursor-2.png"), auto !important;
+    /*width: 300px;*/
+    /*height: 100px;*/
+}
+
+.body-container-footer-com {
+    font-size: 0.73vw !important;
+    letter-spacing: 1px ;
+    font-family: "Pretendard-ExtraLight"!important;
+}
+
+.body-container-footer-web-img {
+    width: 0.177vw;
+    height: 0.177vw;
+    margin-top: 1.5625vw;
+    cursor: url("../../images/components/body/cursor-2.png"), auto !important;
+}
+
+.contact-title {
+    margin-bottom: 1.5625vw;
+}
+
+.retailer-group {
+    margin-top: 6.77vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.retailer-group-each {
+    width: 19.17vw;
+    height: 7.8125vw;
+    border: 1px solid lightgrey;
+    border-radius: 1.5625vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin-bottom: 4.17vw;
+    cursor: url("../../images/components/body/cursor-2.png"), auto;
+}
+
+.retailer-group-each:nth-child(1) {
+    margin-right: 2.6vw;
+}

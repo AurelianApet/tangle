@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/pages/tablet/layout.css">
+    <link rel="stylesheet" href="../css/pages/tablet/contact.css">
+    <link rel="icon" href="../favicon.jpg" type="image/x-icon">
+    <title>Contact Us | Tangle</title>
+</head>
+<body>
+<div class="App">
+    <div class="header">
+        <img src="../images/components/body/1.png" alt="" class="logo"  onclick="goto('index')">
+        <div class="cursor-pointer" onclick="openNav()">
+            <!-- <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div> -->
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <div class="w-100 sidenav-inner">
+                <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 5rem;">
+                    <img src="../images/components/body/tangle-logo.png" class="menu-logo" onclick="document.location='index.html';">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                        <!-- <p>&times;</p> -->
+                    </a>
+                </div>
+                <a onclick="gotoAbout();">ABOUT</a>
+                <a onclick="gotoProducts();">PRODUCTS</a>
+                <a href="contact.html">CONTACT US</a>
+                <a href="recipes.html">RECIPES</a>
+                <a href="event.html">EVENT</a>
+                <a href="wheretobuy.html">WHERE TO BUY</a>
+            </div>
+        </div>
+    </div>
+    <div class="breadcrumb">
+        <p class="breadcrumb-title" onclick="goto('index')">Home</p>
+        <i class="fa fa-angle-right"></i>
+        <p class="breadcrumb-subtitle">Contact us</p>
+    </div>
+    <p class="subtitle">Have Some Questions?</p>
+    <div style="margin-bottom: 2rem;margin-top: 4rem;padding: 0 14vw">
+        <div class="w-100">
+            <div class="d-flex contact-radio-text">
+                <label class="rd-container">United State
+                    <input type="radio" name="radio"  value="us" checked>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="rd-container" value="canada">Canada
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="rd-container">etc
+                    <input type="radio" name="radio" value="etc">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="d-flex justify-content-center input-group">
+                <div class="placeholder">Name</div>
+                <input type="text" class="contact-input" placeholder="Name *">
+            </div>
+            <div class="d-flex justify-content-center   input-group">
+                <div class="placeholder">E-mail</div>
+                <input type="text" class="contact-input" placeholder="E-mail *">
+            </div>
+            <div class="d-flex justify-content-center   input-group">
+                <div class="placeholder">Subject</div>
+                <input type="text" class="contact-input" placeholder="Subject *">
+            </div>
+            <div class="d-flex justify-content-center  input-group">
+                <div class="placeholder">Message</div>
+                <textarea name="" id="" cols="30" rows="5" placeholder="Message *" class="contact-input"></textarea>
+            </div>
+            <div style="padding-left: 4rem;padding-right: 3rem;">
+                <label class="ck-container">
+                    <span style="color:#FF6C00; font-family:pretendard-regular">(Required)</span>
+                    Personal Information Collection, Use Agreement
+                    <a style="color:#ed3d75;" onclick="goto('policy')">[See Full Agreement]</a>
+                    <input type="checkbox" name="radio" value="etc">
+                    <span class="ck-checkmark"></span>
+                </label>
+            </div>
+            <div class="d-flex justify-content-center" style="padding: 0 7rem 0 5rem;">
+                <button class="btn btn-send" data-toggle="modal" data-target="#send">SEND</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="send" role="dialog" style="background-color: rgba(64, 34, 15, 0.5)">
+        <div class="modal-dialog modal-lg modal-dialog-centered d-flex justify-content-center">
+            <!-- Modal content-->
+            <div class="modal-content custom-modal-content">
+                <div class="d-flex justify-content-end">
+                    <div class="cursor-pointer close custom-modal-content-close" data-dismiss="modal">
+                        &times;
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <img src="../images/components/body/1.png" alt="" class="custom-modal-content-img">
+                </div>
+                <p class="custom-modal-content-text">
+                    Thank you for your interest in tangle!<br>
+                    We aim to respond to your inquiry as soon as possible.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="position-relative">
+        <canvas id="footer" width="1000px" height="450px" style="z-index: 1"></canvas>
+        <div class="footer">
+            <div style="display: flex;justify-content: center;">
+                <p class="text-white font-weight-bold footer-link-text1" onclick="goto('service')">Terms of Service</p>
+                <p class="text-white font-weight-bold footer-link-text1" onclick="goto('policy')">Privacy Policy</p>
+            </div>
+            <div class="footer-copy">
+                <div class="dropdown">
+                    <button class="dropbtn">Family Site <i class="fa fa-caret-down fadown"></i><i class="fa fa-caret-up faup"></i></button>
+                    <div class="dropdown-content">
+                        <a href="https://www.samyangfoods.com/eng/index.do" target="_blank">Samyang Food</a>
+                    </div>
+                </div>
+                <div class="footer-tangle-logo">
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <p class="text-white footer-content">ⓒ2023. Samyang Foods Co., Ltd. All Rights Reserved. / 104, Opaesan-ro 3-gil,<br>Seongbuk-gu, Seoul, Korea</p>
+            </div>
+        </div>
+        <img src="../images/components/body/contact/150.png" alt="" class="letter">
+    </div>
+    <div class="scroll-to-top">
+        <p class="text-center scrollToTop">top</p>
+    </div>
+</div>
+</body>
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src="../js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../js/scrollToTop.js" type="text/javascript"></script>
+<script src="../js/main.js" type="text/javascript"></script>
+<script src="../js/pointer.js" type="text/javascript"></script>
+<script src="../js/pages/tablet/footer.js" type="text/javascript"></script>
+<script src="../js/pages/tablet/contact.js" type="text/javascript"></script>
+</html>

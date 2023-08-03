@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/pages/mobile/layout.css">
+    <link rel="stylesheet" href="../css/pages/mobile/service.css">
+    <link rel="icon" href="../favicon.jpg" type="image/x-icon">
+    <title>Service | Tangle</title>
+</head>
+<body>
+<div class="App">
+    <div class="header">
+        <img src="../images/components/body/1.png" alt="" class="logo"  onclick="goto('index')">
+        <div class="cursor-pointer" onclick="openNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <div class="w-100 sidenav-inner">
+                <div class="d-flex justify-content-between align-items-center sidebar-div">
+                    <img src="../images/components/body/tangle-logo.png" class="menu-logo" onclick="document.location='index.html';">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                        <p>&times;</p>
+                    </a>
+                </div>
+                <a onclick="gotoAbout();">ABOUT</a>
+                <a onclick="gotoProducts();">PRODUCTS</a>
+                <a href="contact.html">CONTACT US</a>
+                <a href="recipes.html">RECIPES</a>
+                <a href="event.html">EVENT</a>
+                <a href="wheretobuy.html">WHERE TO BUY</a>
+            </div>
+        </div>
+    </div>
+    <div class="breadcrumb">
+        <p class="breadcrumb-title" onclick="goto('index')">Home</p>
+        <i class="fa fa-angle-right"></i>
+        <p class="breadcrumb-subtitle">Terms of Use</p>
+    </div>
+    <p class="subtitle">Terms of Use</p>
+    <p class="service-text">Welcome to our Website! We hope that you will enjoy your online experience.
+        Throughout this site, the terms “we”, “us”, “our”, “Samyang” refer to Samyangfoods and any of its affiliated companies.
+        “You” refers to any person accessing and/or using this website. We are committed to maintaining trust with users of our Website.
+        The terms below govern your use of the Website.</p>
+    <p class="service-title">1. ACCEPTABLE USE</p>
+    <p class="service-text">
+        1.1. Website
+        <br>Please feel free to explore our Website and, where available, contribute material to it, such as questions, posts, ratings and reviews and multimedia content (e.g. pictures, videos).<br>
+        However, use of the Website and materials posted to it should not be illegal or offensive in any way.<br>
+        You should be mindful not to:
+        <br>(a) breach another person’s right to privacy;
+        <br>(b) infringe any intellectual property rights;
+        <br>(c) make statements that are defamatory (including towards Samyang), relate to pornography, are of a racist or xenophobic nature, promote hatred or incite to violence or disorder;
+        <br>(d) upload files that contain viruses or may lead to security issues; or
+        <br>(e) otherwise jeopardize the integrity of the Website.
+        <br>Please note that Samyang may remove any content from the Website that it believes maybe illegal or offensive.
+        <br> Samyang reserves the right, but not the obligation, to monitor or review the content you have submitted as well as to edit, remove or refuse to post any content that Samyang deems in its sole discretion to be inappropriate. 
+        <br>
+        <br>1.2. Data protection
+        <br>Our Privacy Policy applies to any personal data or material shared on this Website.
+    </p>
+    <p class="service-title">2. INTELLECTUAL PROPERTY</p>
+    <p class="service-text">
+        2.1. Content provided by Samyang
+        <br>All intellectual property rights, including copyright and trademarks, in materials published by or on behalf of Samyang on the Website (e.g. text and images) are owned by Samyang or its licensors. 
+        <br>You may reproduce extracts of the Website for your own private use (i.e. non-commercial use) provided that you keep intact and respect all intellectual property rights, including any copyright notice which may appear on such content (e.g. © 2023 Samyangfoods).
+        <br>2.2. Content provided by You
+        You represent to Samyang that you are either the author of the content that you contribute to this Website, or that you have the rights (ie: have been given permission by the rights holder) and are able to contribute such content (e.g. pictures, videos, music) to the Website.
+        <br>You agree that such content will be treated as non-confidential and you grant Samyang a royalty free, perpetual, worldwide licence to use (including to disclose, reproduce, transmit, publish, adapt or broadcast) the content you provide for purposes relating to its business.
+        <br>Samyang may use the content for promotional, advertising and other purposes and you will not be entitled to any compensation for such use.
+        <br>Please note that Samyang is free to decide whether or not to use this content and that Samyang may already have developed similar content or have obtained such content from other sources, in which case all intellectual property rights in this content remains with Samyang and its licensors.
+        <br>
+        <br>2.3 Rules governing consumer ratings and review service
+        <br>In addition to these terms the following additional rules apply for ratings and review services.
+        <br>In order to submit any content to any rating and review service available on this Website (such as text, photo, video, likeness or other material or information), you must be 18 years of age or older, or have received the consent of the person/s exercising parental authority.
+        <br>If you have received prior payment or promise of payment in return for your proposed submission; or if you have received an incentive such as free product, discounts, gifts, sweepstakes entries you will disclose it in your submission.
+        <br>If you are a Samyang employee or work for a company or agency hired by Samyang, you have disclosed that relationship. 
+        <br>All content that you submit is accurate and is based upon your actual experience with the product being reviewed.
+        <br>It shall not include any information that references other websites, addresses, email addresses, contact information or phone numbers.
+        <br>You are responsible for the content of your submission, not Samyang.
+    </p>
+    <p class="service-title">3. LIABILITY</p>
+    <p class="service-text">
+        While Samyang uses all reasonable efforts to ensure the accuracy of materials on our Website and to avoid disruptions, we are not responsible for inaccurate information, disruptions, discontinuance or other events which may cause you damage, either direct (e.g. computer failure) or indirect (e.g. loss of profit).
+        <br>Any reliance upon materials on this Website shall be at your own risk.
+        <br>This Website may contain links to websites outside of Samyang. Samyang has no control over such third party websites, does not necessarily endorse them and accepts no responsibility for them, including as to their content, accuracy or function.
+        <br>As a result, we invite you to carefully review the legal notices of such third party websites, including keeping yourself informed of any changes to them.
+        <br>You may operate a third party website and wish to link to this Website.
+        <br>In this case, Samyang does not object to such linking provided that you do not suggest in any way that you are affiliated with or endorsed by Samyang.
+        <br>You must not use “framing” or similar practices, and must ensure that the link to the Website opens in a new window.
+    </p>
+    <p class="service-title">4. CONTACT US</p>
+    <p class="service-text">
+        Any question regarding these Terms should be direct to tangle@samyangfoods.com
+    </p>
+    <p class="service-title">5. CHANGES</p>
+    <p class="service-text">
+        Samyang reserves the right to make changes to these terms of use.
+        <br>Please refer to this page from time to time to review these terms of use and any new information.
+        <br>Your continued use of this Website following our posting of changes will mean that you accept the revised terms.
+    </p>
+    <p class="service-title">6. GOVERNING LAW AND JURISDICTION</p>
+    <p class="service-text">
+        You and Samyang agree that any claim or dispute relating to the Website shall be governed by the law of South Korea and brought before the courts of Korean Commercial Arbitration Board located in Seoul, South Korea,
+    </p>
+    <p class="service-title">7. CREDITS</p>
+    <p class="service-text">
+        Copyright © May 2023, Samyangfoods.
+    </p>
+    <canvas id="footer"></canvas>
+    <div class="footer">
+        <div class="footer-service">
+            <img src="../images/components/body/main/261.png" alt="" class="footer-logo">
+            <p class="text-white footer-content">ⓒ2023. Samyang Foods Co., Ltd. All Rights Reserved. <br>| 104, Opaesan-ro 3-gil, Seongbuk-gu, Seoul, Korea</p>
+            <p class="text-white font-weight-bold footer-link-text" onclick="goto('service')">Terms of Service</p>
+            <p class="text-white font-weight-bold footer-link-text" onclick="goto('policy')">Privacy Policy</p>
+        </div>
+        <div class="footer-content">
+            <div class="dropdown">
+                <button class="dropbtn">Family Site <i class="fa fa-caret-down fadown"></i><i class="fa fa-caret-up faup"></i></button>
+                <div class="dropdown-content">
+                    <a href="https://www.samyangfoods.com/eng/index.do" target="_blank">Samyang Food</a>
+                </div>
+            </div>
+            <!-- <div class="d-flex">
+                    <a href="https://www.instagram.com/samyangfoods_america/" target="_blank">
+                    <img src="../images/components/body/main/4.png" style="margin-right: 50px" alt="" class="footer-web-img">
+                </a>
+                <a href="https://www.facebook.com/Samyangfoods.America/" target="_blank">
+                    <img src="../images/components/body/main/3.png" alt="" class="footer-web-img">
+                </a>
+            </div> -->
+        </div>
+
+        <div class="footer-service1">
+            <p class="text-white font-weight-bold footer-link-text1" onclick="goto('service')">Terms of Service</p>
+            <p class="text-white font-weight-bold footer-link-text1" onclick="goto('policy')">Privacy Policy</p>
+        </div>
+        <div class="footer-copy">
+            <div class="dropdown">
+                <button class="dropbtn">Family Site <i class="fa fa-caret-down fadown"></i><i class="fa fa-caret-up faup"></i></button>
+                <div class="dropdown-content">
+                    <a href="https://www.samyangfoods.com/eng/index.do" target="_blank">Samyang Food</a>
+                </div>
+            </div>
+            <div class="footer-tangle-logo">
+            </div>
+        </div>
+        <div class="footer-content1">
+            <p class="text-white footer-content-p">ⓒ2023. Samyang Foods Co., Ltd. All Rights Reserved. / 104, Opaesan-ro 3-gil,<br>Seongbuk-gu, Seoul, Korea</p>
+        </div>
+    </div>
+    <div class="scroll-to-top">
+        <p class="text-center scrollToTop">top</p>
+    </div>
+</div>
+</body>
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src="../js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../js/scrollToTop.js" type="text/javascript"></script>
+<script src="../js/main.js" type="text/javascript"></script>
+<script src="../js/pointer.js" type="text/javascript"></script>
+<script src="../js/pages/mobile/footer.js" type="text/javascript"></script>
+</html>

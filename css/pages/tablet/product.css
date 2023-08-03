@@ -1,0 +1,482 @@
+.header-advertice {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header-advertice-pane {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    background-color: #f8f8f8;
+    padding: 1.83rem 1.1rem;
+    border-radius: 20px;
+}
+
+.header-advertice-pane-img {
+    width: 15vw;
+    height: auto;
+}
+
+.header-advertice-pane-second-img {
+    width: 15vw;
+    height: auto;
+}
+
+.header-advertice-pane-title {
+    color: var(--brown-color);
+    font-family: Pretendard-ExtraBold;
+    line-height: 1.1rem;
+    font-size: 1rem;
+}
+
+.header-separate-pane {
+    background-color: #f8f8f8;
+    height: 1.5rem;
+}
+
+.body-container {
+    margin-top: 50px;
+    padding: 40px 80px;
+    margin-bottom: -0.1rem;
+    width: 100%;
+    background-color: var(--orange-color);
+}
+
+.bread-crumb {
+    color: white;
+    font-size: 0.88rem;
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.bread-crumb-title {
+    margin-right: 20px;
+}
+
+.bread-crumb-icon {
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+.bread-crumb-text {
+    margin-left: 20px;
+    letter-spacing: 1px;
+}
+
+.body-container-carousel {
+    margin-top: 2.2rem;
+    width:50%;
+}
+
+.carousel-inner {
+    border-radius: 30px !important;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.carousel-indicators-container {
+    height: 1rem;
+}
+
+.carousel-item-each {
+    background-color: var(--yellow-color);
+    padding: 4vw 1.1vw;
+    width: 42vw;
+    height: 42vw;
+    border-radius: 30px !important;
+}
+
+.product-carousel-image1 {
+    width: 40vw;
+    height: auto;
+    padding-top: 1rem;
+}
+
+.product-carousel-image2 {
+    border-radius: 30px;
+    width: 42vw;
+    height: 42vw;
+}
+
+.product-carousel-image {
+    width: 40vw;
+    height: auto;
+}
+
+.carousel-indicators {
+    bottom: -2rem;
+}
+
+.carousel-indicators li {
+    width: 0.68rem;
+    height: 0.68rem;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 0.5rem;
+}
+
+.carousel-indicators .active {
+    background-color: var(--brown-color);
+}
+
+.product-carosel-content-box {
+    margin-left: 2rem;
+}
+
+.body-container-title {
+    margin-top: 2.5rem;
+    color: var(--brown-color);
+    font-size: 1.44rem;
+    font-family: Pretendard;
+    text-align: center;
+    line-height: 1.7rem;
+}
+
+.body-container-title-gram {
+    margin-top: 0.75rem;
+    color: var(--brown-color);
+    font-family: Pretendard-Bold;
+    font-size: 0.96rem;
+    text-align: center;
+    margin-bottom: 0.75rem;
+}
+
+.body-container-title-content {
+    color: var(--brown-color);
+    text-align: center;
+    font-size: 0.88rem;
+    line-height: 1.1rem;
+    font-family: Pretendard-Medium;
+    margin-bottom: 1rem;
+}
+
+.body-container-title-separator {
+    margin-top: 0.7rem;
+    width: 100%;
+    height: 1.5px;
+    background-color: white;
+    margin-bottom: 0.7rem;
+}
+
+.body-container-title-exp {
+    font-size: 0.72rem;
+    color: white;
+    text-align: center;
+}
+
+.body-container-title-exp1 {
+    font-size: 0.8rem;
+    color: white;
+    text-align: center;
+    font-family: Pretendard-Medium;
+}
+
+.carousel-control {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-control img {
+    width: 60px;
+    height: 60px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: static;
+    opacity: 1;
+    margin-top: 20px;
+}
+
+.body-footer-pork-img {
+    width: 78vw;
+    height: auto;
+    float: right;
+    margin-top: -61vw;
+    position: relative;
+    margin-right: -33vw;
+    animation: porkmove 1.5s linear infinite;
+}
+
+@keyframes porkmove {
+    0% {
+        margin-top: -61vw;
+    }
+    50% {
+        margin-top: -59vw;
+    }
+    100% {
+        margin-top: -61vw;
+    }
+}
+
+.body-container-recipes-pane {
+    margin-top: 6rem;
+}
+
+.body-container-recipes-pane-title {
+    display: flex;
+    justify-content: center;
+    font-size: 2.88rem;
+    font-family: Pretendard-ExtraBold;
+    color: var(--yellow-color);
+    margin-bottom: 6rem;
+}
+
+.body-container-recipes-pane-img {
+    padding: 0 4rem;
+}
+
+.body-container-recipes-pane-img img {
+    height: 50.39vw;
+}
+
+.body-container-recipes-check-title {
+    color: var(--brown-color);
+    font-size: 2.12rem;
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    font-family: Pretendard-extrabold;
+}
+
+.checklist-box {
+    margin-right: 2rem;
+}
+
+.body-container-recipes-check-first {
+    width: 25.5vw;
+    height: auto;
+}
+
+.body-container-recipes-check-first-second {
+    max-width: 24.44vw;
+    margin-top: 2rem;
+    margin-bottom: 0.9rem;
+}
+
+.body-container-recipes-check-text {
+    margin-top: 1.28rem;
+    font-size: 2rem;
+    color: var(--brown-color);
+    text-align: center;
+    font-family: Pretendard-Bold;
+}
+
+.body-container-recipes-check-second {
+    width: auto;
+    height: 19vw;
+    margin-top:1.2rem;
+    margin-bottom: -0.3rem;
+}
+
+.body-container-recipes-check-third {
+    width: 25.22vw;
+    height: auto;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.body-container-recipes-cook-title {
+    color: var(--brown-color);
+    font-size: 2.12rem;
+    text-align: center;
+    margin-top: 9rem;
+    margin-bottom: 4rem;
+    font-family: Pretendard-extrabold;
+}
+
+.body-container-recipes-cook-pane {
+    padding: 0 2.8rem;
+    margin-bottom: 4rem;
+}
+
+.body-container-recipes-cook-pane-first-img {
+    width: 24vw;
+    height: 25vw;
+    margin-right: 1rem;
+}
+
+.body-container-recipes-cook-pane-text {
+    color: var(--brown-color);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-family: Pretendard-Bold;
+    letter-spacing: -0.5px;
+    line-height: 1.7rem;
+}
+
+.product-cooking-1 {
+    padding-top: 2rem
+}
+
+.product-cooking-2 {
+    margin-top: 8rem;
+    margin-left: -18rem;
+}
+
+.step2 {
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+}
+
+.step3 {
+    margin-top: 1.5rem;
+    margin-left: 1.2rem;
+}
+
+.step3-content {
+    padding-top: 5.2rem;
+}
+
+.second-img {
+    margin-top: -5rem;
+    margin-left: 2rem;
+}
+
+.third-text {
+    margin-right: -31rem;
+    margin-top: 1.6rem;
+}
+
+.recipes-arrow-first {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-top: 1rem;
+    margin-left: 16rem;
+    transform: rotate(-11deg);
+}
+
+.body-container-recipes-cook-pane-second-text {
+    text-align: right;
+}
+
+.body-container-recipes-cook-pane-second-img {
+    width: 25vw;
+    height: 24vw;
+    margin-left: 1rem;
+}
+
+.recipes-arrow-second {
+    width: 4.5rem;
+    height: 3.5rem;
+    float: right;
+    margin-right: 31vw;
+    margin-top: 1rem;
+    transform: rotate(-2deg);
+}
+
+.body-container-recipes-cook-pane-third-img {
+    width: 27vw;
+    height: 19vw;
+    margin-right: 3rem;
+    margin-top: 3rem;
+}
+
+.body-container-recipes-cook-tip {
+    color: var(--brown-color);
+    font-size: 2.12rem;
+    font-family: Pretendard-extrabold;
+    text-align: center;
+    margin-top: 7.5rem;
+}
+
+.body-container-recipes-cook-tip-pane {
+    width: 23vw;
+    height: 23vw;
+    margin-top: 4rem;
+    background-color: var(--orange-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    color: white;
+    font-size: 1.92rem;
+    text-align: center;
+    font-family: Pretendard-Bold;
+}
+
+.tip-content {
+    margin-top: 0rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: Pretendard;
+    color: #fff226;
+    opacity: 1;
+}
+
+.body-container-recipes-cook-review {
+    margin-top: 12vw;
+    border-radius: 30px;
+    background-color: #f8f8f8;
+    width: 20vw;
+    height: 30vw;
+    box-shadow: 3px 3px 10px lightgrey;
+    padding: 2.5rem 0.5rem 1rem 0.5rem;
+    animation: image-bounce 1s ease infinite alternate;
+}
+
+.body-container-middle-review-each1 {
+    animation: image-bounce 0.8s ease infinite alternate;
+}
+
+.body-container-middle-review-each2 {
+    animation: image-bounce 1s ease-in infinite alternate-reverse;
+    animation-delay: 200ms;
+}
+.body-container-middle-review-each3 {
+    animation-delay: 400ms;
+    animation: image-bounce 1s ease-in-out infinite alternate;
+}
+.body-container-middle-review-each4 {
+    animation-delay: 600ms;
+    animation: image-bounce 0.8s ease-out infinite alternate-reverse;
+}
+
+@keyframes image-bounce {
+    0% {
+        transform: translateY(0px) scaleY(1.0) scaleX(1.0);
+    }
+    100% {
+        transform: translateY(-10px) scaleY(1.02) scaleX(1.02);
+    }
+}
+
+.body-container-middle-review-text {
+    margin-top: 1rem;
+    font-size: 0.72rem;
+    color: #725a4d;
+    font-family: Pretendard-Medium;
+}
+
+.star-img {
+    width: 58%;
+    margin-top: 0rem;
+    height: auto;
+}
+
+.body-container-middle-review-author {
+    margin-top: 15px;
+    font-size: 14px;
+    margin-right: 2rem;
+}
+
+.body-container-recipes-cook-bowl {
+    width: 85.73vw;
+    height: 47.31vw;
+}
+
+.product-logo {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    max-width: 11.2rem;
+    height: 3.8rem;
+    margin-top: 0.7rem;
+}

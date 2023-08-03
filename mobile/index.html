@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/pages/mobile/layout.css">
+    <link rel="stylesheet" href="../css/pages/mobile/index.css">
+    <link rel="stylesheet" href="../css/pages/mobile/index-1.css">
+    <link rel="stylesheet" type="text/css" href="../css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="../css/pages/mobile/feature-carousel.css" />
+    <link rel="icon" href="../favicon.jpg" type="image/x-icon">
+    <title>Home | Tangle</title>
+</head>
+<body>
+<div class="App">
+    <div class="header">
+        <img src="../images/components/body/1.png" alt="" class="logo"  onclick="goto('index')">
+        <div class="cursor-pointer" onclick="openNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <div class="w-100 sidenav-inner">
+                <div class="d-flex justify-content-between align-items-center sidebar-div">
+                    <img src="../images/components/body/tangle-logo.png" class="menu-logo" onclick="location.reload();">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                        <p>&times;</p>
+                    </a>
+                </div>
+                <a onclick="gotoAbout();">ABOUT</a>
+                <a onclick="gotoProducts();">PRODUCTS</a>
+                <a href="contact.html">CONTACT US</a>
+                <a href="recipes.html">RECIPES</a>
+                <a href="event.html">EVENT</a>
+                <a href="wheretobuy.html">WHERE TO BUY</a>
+            </div>
+        </div>
+    </div>
+    <div class="main-slider">
+        <div id="main-slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video autoplay muted id="first_video" class="video" playsinline onended="nextSlide()">
+                        <source src="../images/components/body/mobile_bulgogi.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/components/body/B_메인배너/mobile_bulgogi.png" width="100%" height="30%">
+                </div>
+                <div class="carousel-item">
+                    <video autoplay muted id="second_video"  class="video" playsinline onended="nextSlide()">
+                        <source src="../images/components/body/mobile_kimchi.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/components/body/B_메인배너/mobile_kimchi.png" width="100%" height="30%">
+                </div>
+            </div>
+            <div class="w-100 d-flex justify-content-center">
+                <ul class="carousel-indicators">
+                    <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#main-slider" data-slide-to="1"></li>
+                    <li data-target="#main-slider" data-slide-to="2"></li>
+                    <li data-target="#main-slider" data-slide-to="3" style="margin-right: 0"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="slide-arrow" style="display: none;">
+            <a class="slide-arrow-left cursor1" href="#main-slider" data-slide="prev">
+                <div class="arrow-button">
+                    <div class="hover-effect">
+                    </div>
+                    <img src="../images/components/body/arrow-left.png" alt="">
+                </div>
+            </a>
+            <a class="slide-arrow-right cursor2" href="#main-slider" data-slide="next">
+                <div class="arrow-button">
+                    <div class="hover-effect">
+                    </div>
+                    <img src="../images/components/body/arrow-right.png" alt="">
+                </div>
+            </a>
+        </div>
+    </div>
+    <canvas id="header" class="position-absolute" style="top: 95.4vw;z-index: -1"></canvas>
+    <div class="body-container">
+        <div id="mabout" name="mabout"><p class="text-center about-text">ABOUT</p></div>
+        <div class="d-flex justify-content-center">
+            <div class="tangle-bouncing tangle-bouncing-logo">
+                <ul>
+                    <li><img src="../images/tangle/t.png" class="tangle-bouncing-img1"></li>
+                    <li><img src="../images/tangle/a.png" class="tangle-bouncing-img2"></li>
+                    <li><img src="../images/tangle/n.png" class="tangle-bouncing-img3"></li>
+                    <li><img src="../images/tangle/g.png" class="tangle-bouncing-img4"></li>
+                    <li><img src="../images/tangle/l.png" class="tangle-bouncing-img5"></li>
+                    <li><img src="../images/tangle/e.png" class="tangle-bouncing-img6"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="body-container-first-pane-image-range">
+            <lottie-player id="logoLottie" src="../json/drawlogo.json" background="transparent" style="width:100%; height: 100%;"></lottie-player>
+            <!-- <div class="vertical-line wow" data-wow-delay="0s">
+                <img src="../images/components/body/main/20.png" alt="" class="wow" data-wow-delay="0s"/>
+            </div> -->
+        </div>
+        <div class="d-flex justify-content-center w-100 story-box wow fadeIn">
+            <div class="tangle-story-pane">
+                <div class="d-flex justify-content-center">
+                    <img src="../images/components/body/A_about/mobile_about.png" alt="" class="tangle-story-pane-img  wow fadeIn"  data-wow-delay="0.5s">
+                </div>
+                <div class="d-flex justify-content-around w-100 align-items-center" style="margin-bottom: 5.56vw;">
+                    <p class="tangle-story-pane-title">ABOUT</p>
+                    <img src="../images/components/body/main/261.png" alt="" style="width: 26.3vw;height: 9.16vw;">
+                    <p class="tangle-story-pane-title">STORY!</p>
+                </div>
+                <p class="text-center tangle-story-pane-content  wow fadeIn">
+                    'Tangle' is Korean-inspired pasta, <br> also know as <span class="circle">K-pasta</span>,
+                </p>
+                <p class="text-center tangle-story-pane-content  wow fadeIn" style="margin-top:4.1vw;">
+                    made with air-dried noodles and <br> Korean-style signature sauce.
+                </p>
+                <p class="text-center tangle-story-pane-content" style="margin-top:6.9vw;">
+                <p class="crossover crossover-1" style="background-size:62%!important;">The name 'Tangle' comes from</p>
+                </p>
+                <p class="text-center tangle-story-pane-content">
+                <p class="crossover crossover-2" id="bg">the Korean word(탱글)</p>
+                </p>
+                <p class="text-center tangle-story-pane-content  wow fadeIn" style="margin-top:4.13vw;">
+                    for a firm and elastic texture, <br> which perfectly describes
+                </p>
+                <p class="text-center tangle-story-pane-content  wow fadeIn">
+                    our firm and bouncy noodles.
+                </p>
+                <p class="text-center tangle-story-pane-content  wow fadeIn" style="margin-top:4.13vw;">
+                    K-pasta is a new twist on a classic dish, <br> reinterpreted in Korean style.
+                </p>
+                <p class="text-center tangle-story-pane-content" style="margin-top:4.13vw;">
+                    Our super easy one-pot pasta recipe is <br> perfect for every day.
+                </p>
+                <p class="text-center tangle-story-pane-content underline wow fadeIn">
+                    Make your life lively with Tangle.
+                </p>
+            </div>
+        </div>
+        <div class="body-container-first-pane-bottom">
+            <div class="line d-flex justify-content-center">
+                <div class="mask"></div>
+            </div>
+            <div class="image d-flex justify-content-center wow fadeIn" data-wow-duration="1s">
+                <div class="image-container">
+                    <img src="../images/components/body/main/113.png" class="body-container-first-pane-bottom-img">
+                </div>
+            </div>
+        </div>
+        <!--            <div class="d-flex justify-content-center">-->
+        <!--                <img src="../images/components/body/main/53.png" alt="" class="tangle-noodle-img">-->
+        <!--            </div>-->
+    </div>
+    <div class="body-container-first-pane-separator body-container-first-pane-separator-top" style="margin-top: -69.4vw;position: relative;z-index: 2"></div>
+    <div class="body-container-product">
+        <div class="d-flex justify-content-end position-relative">
+            <img src="../images/components/body/3.png" alt="" class="body-container-product-noodle-first-img">
+            <div class="mingle-mask1"></div>
+        </div>
+        <div class="mingle-and-wiggle-with">
+            <div class="d-flex justify-content-center" style="width: 33%;margin: auto">
+                <ul class="text-white body-container-second-pane-mingle">
+                    <li class="white wow mingle">M</li>
+                    <li class="white wow mingle">i</li>
+                    <li class="white wow mingle">n</li>
+                    <li class="white wow mingle">g</li>
+                    <li class="white wow mingle">l</li>
+                    <li class="white wow mingle">e</li>
+                    <li class="white wow mingle">&nbsp;</li>
+                    <li class="yellow wow mingle">a</li>
+                    <li class="yellow wow mingle">n</li>
+                    <li class="yellow wow mingle">d</li>
+                </ul>
+            </div>
+            <div class="d-flex justify-content-center" style="width: 33%;margin: auto">
+                <ul class="text-white body-container-second-pane-mingle">
+                    <li class="white wow tangle">W</li>
+                    <li class="white wow tangle">i</li>
+                    <li class="white wow tangle">g</li>
+                    <li class="white wow tangle">g</li>
+                    <li class="white wow tangle">l</li>
+                    <li class="white wow tangle">e</li>
+                    <li class="white wow tangle">&nbsp;</li>
+                    <li class="yellow wow tangle">w</li>
+                    <li class="yellow wow tangle">i</li>
+                    <li class="yellow wow tangle">t</li>
+                    <li class="yellow wow tangle">h</li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex justify-content-start position-relative">
+            <img src="../images/components/body/4.png" alt="" class="body-container-product-noodle-second-img">
+            <div class="mingle-mask2"></div>
+        </div>
+        <div class="d-flex justify-content-center tangle-bouncing wow zoomIn tangle-bouncing-mingle" data-wow-delay="1s">
+            <ul>
+                <li><img src="../images/tangle/t.png" class="tangle-bouncing-mingle-img1"></li>
+                <li><img src="../images/tangle/a.png" class="tangle-bouncing-mingle-img2"></li>
+                <li><img src="../images/tangle/n.png" class="tangle-bouncing-mingle-img3"></li>
+                <li><img src="../images/tangle/g.png" class="tangle-bouncing-mingle-img4"></li>
+                <li><img src="../images/tangle/l.png" class="tangle-bouncing-mingle-img5"></li>
+                <li><img src="../images/tangle/e.png" class="tangle-bouncing-mingle-img6"></li>
+            </ul>
+        </div>
+        <div class="d-flex justify-content-end">
+            <img src="../images/components/body/main/poke.png" alt="" class="body-container-product-pork-img">
+        </div>
+        <div id="carousel" class="body-container-product-pane-group">
+            <div class="carousel-feature">
+                <div class="d-flex justify-content-center pt-1">
+                    <div class="body-container-second-pane-advertise-each poke">
+                    </div>
+                </div>
+                <p class="body-container-product-pane-group-each-title">PREMIUM<br>NOODLES</p>
+                <p class="body-container-product-pane-group-each-content w-100">Restaurant-quality<br>firm and bouncy<br>noodles made by<br>air-dry technology</p>
+            </div>
+            <div class="carousel-feature">
+                <div class="d-flex justify-content-center pt-1">
+                    <div class="body-container-second-pane-advertise-each pot">
+                    </div>
+                </div>
+                <p class="body-container-product-pane-group-each-title">KOREAN-STYLE<br>SAUCE</p>
+                <p class="body-container-product-pane-group-each-content w-100">
+                    Inspiration by Korean<br>representative cuisine<br>and classic pasta
+                </p>
+            </div>
+            <div class="carousel-feature">
+                <div class="d-flex justify-content-center pt-1">
+                    <div class="body-container-second-pane-advertise-each flake">
+                    </div>
+                </div>
+                <p class="body-container-product-pane-group-each-title">BIG<br>FLAKES</p>
+                <p class="body-container-product-pane-group-each-content w-100">Completion of meal<br>experience by providing a<br>satisfactory texture<br>every bite by bite</p>
+            </div>
+            <div class="carousel-feature">
+                <div class="d-flex justify-content-center pt-1">
+                    <div class="body-container-second-pane-advertise-each hand">
+                    </div>
+                </div>
+                <p class="body-container-product-pane-group-each-title">WELLNESS</p>
+                <p class="body-container-product-pane-group-each-content w-100">
+                    Hearty meal made with<br>non-fried noodles<br>and plant based flakes
+                </p>
+            </div>
+            <div class="carousel-feature">
+                <a href="#" style="visibility: hidden">
+                    <img class="carousel-image" alt="Image Caption">
+                </a>
+                <div class="d-flex justify-content-center pt-1">
+                    <div class="body-container-second-pane-advertise-each sauce">
+                    </div>
+                </div>
+                <p class="body-container-product-pane-group-each-title">ONE POT<br>RECIPE</p>
+                <p class="body-container-product-pane-group-each-content w-100">
+                    Super-convenient<br>recipe perfect for<br>busy weekday dinner
+                </p>
+            </div>
+        </div>
+        <!-- <div class="d-flex justify-content-center position-relative" style="z-index: 5">
+            <img src="../images/components/body/main/4-1.png" alt="" class="product-group-arrow product-group-arrow-left" onclick="goslide('left')" id="carousel-left">
+            <img src="../images/components/body/main/4-1.png" alt="" class="product-group-arrow" onclick="goslide('right')" id="carousel-right">
+        </div> -->
+        <div class="d-flex justify-content-center" style="margin-bottom: 20.7vw;margin-top: 20.7vw">
+            <canvas id="mingleandwiggleCanvas" width="278vw" height="22.2vw"></canvas>
+        </div>
+        <div class="d-flex justify-content-end position-relative">
+            <img src="../images/components/body/main/142.png" alt="" class="body-container-product-detail-noodle-first-img">
+            <div class="productMaskLeft1"></div>
+        </div>
+        <div class="body-container-product-detail" name="mproducts" id="mproducts">
+            <p class="text-center text-white body-container-product-detail-title">PRODUCTS</p>
+            <div class="w-100" style="padding: 0 0 0 4.2vw">
+                <div class="body-container-product-detail-pane">
+                    <div class="hover-effect-background background1">
+                        <div class="hover-effect-background-div1"></div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="../images/components/body/main/113.png" alt="" class="body-container-product-detail-pane-img">
+                    </div>
+                    <p class="body-container-product-detail-pane-title">TANGLE<br>BULGOGI ALFREDO<br>TANGLUCCINE</p>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn body-container-product-detail-pane-btn" onclick="goto('bulgogi')">View</button>
+                    </div>
+                </div>
+                <div class="body-container-product-detail-pane" style="margin-right: 0">
+                    <div class="hover-effect-background background2">
+                        <div class="hover-effect-background-div2"></div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="../images/components/body/main/114.png" alt="" class="body-container-product-detail-pane-img body-container-product-detail-pane-img-second">
+                    </div>
+                    <p class="body-container-product-detail-pane-title">TANGLE<br>BULGOGI ALFREDO<br>TANGLUCCINE BIG BOWL</p>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn body-container-product-detail-pane-btn" onclick="goto('bulgogi2')">View</button>
+                    </div>
+                </div>
+                <div class="body-container-product-detail-pane">
+                    <div class="hover-effect-background background3">
+                        <div class="hover-effect-background-div3"></div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <img src="../images/components/body/main/8.png" alt="" class="body-container-product-detail-pane-img">
+                    </div>
+                    <p class="body-container-product-detail-pane-title">TANGLE<br>KIMCHI ROSÉ<br>TANGLUCCINE</p>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn body-container-product-detail-pane-btn" onclick="goto('kimchi')">View</button>
+                    </div>
+                </div>
+                <div class="body-container-product-detail-pane" style="margin-right: 0">
+                    <div class="hover-effect-background background4">
+                        <div class="hover-effect-background-div4"></div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <img src="../images/components/body/main/10.png" alt="" class="body-container-product-detail-pane-img body-container-product-detail-pane-img-second">
+                    </div>
+                    <p class="body-container-product-detail-pane-title">TANGLE<br>KIMCHI ROSÉ<br>TANGLUCCINE BIG BOWL</p>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn body-container-product-detail-pane-btn" onclick="goto('kimchi2')">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex w-100 position-relative">
+            <img src="../images/components/body/main/142.png" alt="" class="body-container-product-detail-noodle-second-img">
+            <div class="productMaskLeft2"></div>
+        </div>
+        <div class="body-container-first-pane-separator" style="margin-top: 15.3vw"></div>
+    </div>
+    <div class="body-container-follow-pane" style="display:none;">
+        <div class="d-flex justify-content-center">
+            <img src="../images/components/body/main/1.png" alt="" class="body-container-follow-pane-logo">
+        </div>
+        <div class="d-flex justify-content-center">
+            <button class="btn body-container-follow-pane-btn">+ FOLLOW</button>
+        </div>
+        <div class="" style="padding: 0 6.9vw 0 8.3vw;height:97.2vw">
+            <a href="http://" target="_blank" class="body-container-follow-pane-each"></a>
+            <a href="http://" target="_blank" class="body-container-follow-pane-each"></a>
+            <a href="http://" target="_blank" class="body-container-follow-pane-each" style="margin-right: 0"></a>
+            <a href="http://" target="_blank" class="body-container-follow-pane-each"></a>
+            <a href="http://" target="_blank" class="body-container-follow-pane-each"></a>
+            <a href="http://" target="_blank" class="body-container-follow-pane-each" style="margin-right: 0"></a>
+            <a href="http://" target="_blank" class="body-container-follow-pane-each"></a>
+            <a href="http://" target="_blank" class="body-container-follow-pane-each"></a>
+            <a href="http://" target="_blank" class="body-container-follow-pane-each" style="margin-right: 0"></a>
+        </div>
+    </div>
+    <p class="body-container-follow-pane-udpate" style="padding-top:19.5vw;">Get updates from Tangle</p>
+    <p class="body-container-follow-pane-udpate-text">Sign up for stories, special recipes, K-PASTA tips</p>
+    <div class="d-flex justify-content-center position-relative">
+        <p class="body-container-footer-pane-input-text">Thanks for signing up!</p>
+        <input type="text" class="body-container-footer-pane-input" placeholder="Your Email">
+        <img src="../images/components/body/5.png" alt="" class="body-container-footer-pane-input-icon" id="body-container-footer-pane-input-icon">
+    </div>
+    <canvas id="footer1" width="278vw" height="125vw"></canvas>
+    <div class="footer">
+        <div class="footer-service">
+            <img src="../images/components/body/main/261.png" alt="" class="footer-logo">
+            <p class="text-white footer-content">ⓒ2023. Samyang Foods Co., Ltd. All Rights Reserved. <br>| 104, Opaesan-ro 3-gil, Seongbuk-gu, Seoul, Korea</p>
+            <p class="text-white font-weight-bold footer-link-text" onclick="goto('service')">Terms of Service</p>
+            <p class="text-white font-weight-bold footer-link-text" onclick="goto('policy')">Privacy Policy</p>
+        </div>
+        <div class="footer-content">
+            <div class="dropdown">
+                <button class="dropbtn">Family Site <i class="fa fa-caret-down fadown"></i><i class="fa fa-caret-up faup"></i></button>
+                <div class="dropdown-content">
+                    <a href="https://www.samyangfoods.com/eng/index.do" target="_blank">Samyang Food</a>
+                </div>
+            </div>
+            <!-- <div class="d-flex">
+                    <a href="https://www.instagram.com/samyangfoods_america/" target="_blank">
+                    <img src="../images/components/body/main/4.png" style="margin-right: 50px" alt="" class="footer-web-img">
+                </a>
+                <a href="https://www.facebook.com/Samyangfoods.America/" target="_blank">
+                    <img src="../images/components/body/main/3.png" alt="" class="footer-web-img">
+                </a>
+            </div> -->
+        </div>
+
+        <div class="footer-service1">
+            <p class="text-white font-weight-bold footer-link-text1" onclick="goto('service')">Terms of Service</p>
+            <p class="text-white font-weight-bold footer-link-text1" onclick="goto('policy')">Privacy Policy</p>
+        </div>
+        <div class="footer-copy">
+            <div class="dropdown">
+                <button class="dropbtn">Family Site <i class="fa fa-caret-down fadown"></i><i class="fa fa-caret-up faup"></i></button>
+                <div class="dropdown-content">
+                    <a href="https://www.samyangfoods.com/eng/index.do" target="_blank">Samyang Food</a>
+                </div>
+            </div>
+            <div class="footer-tangle-logo">
+            </div>
+        </div>
+        <div class="footer-content1">
+            <p class="text-white footer-content-p">ⓒ2023. Samyang Foods Co., Ltd. All Rights Reserved. / 104, Opaesan-ro 3-gil,<br>Seongbuk-gu, Seoul, Korea</p>
+        </div>
+    </div>
+    <div class="scroll-to-top">
+        <p class="text-center scrollToTop">top</p>
+    </div>
+</div>
+</body>
+
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src="../js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../js/scrollToTop.js" type="text/javascript"></script>
+<script src="../js/main.js" type="text/javascript"></script>
+<script src="../js/lottie-player.js"></script>
+<script src="../js/lottie-interactivity.min.js"></script>
+<script>
+    LottieInteractivity.create({
+        mode:"scroll",
+        player: "#logoLottie",
+        actions: [
+            {
+                visibility:[0,1],
+                type: "seek",
+                frames: [0, 80]
+            }
+        ]
+    });
+</script>
+<script src="../js/pointer.js" type="text/javascript"></script>
+<script src="../js/wow.js"></script>
+<script src="../js/jquery.sticky.js" type="text/javascript"></script>
+<script src="../js/pages/mobile/index.js" type="text/javascript"></script>
+<script src="../js/pages/mobile/footer.js" type="text/javascript"></script>
+<script src="../js/pages/mobile/jquery-1.7.min.js" type="text/javascript"></script>
+<script src="../js/pages/mobile/jquery.featureCarousel.js" type="text/javascript"></script>
+<script>
+    $(document).ready(function() {
+        let carousel = $("#carousel").featureCarousel({
+            autoPlay: false
+        });
+
+        $("#carousel-left").click(function () {
+            carousel.prev();
+        });
+        $("#carousel-right").click(function () {
+            carousel.next();
+        });
+        let StartX,EndX;
+        $('#carousel')[0].addEventListener('touchstart',function (e) {
+            StartX = arguments[0].changedTouches[0].pageX;
+        });
+        $('#carousel')[0].addEventListener('touchend',function (e) {
+            EndX = arguments[0].changedTouches[0].pageX;
+            if (EndX > StartX) {
+                carousel.prev();
+            } else {
+                carousel.next();
+            }
+            StartX = EndX = null;
+        });
+    });
+
+    function gotoAbout()
+    {
+        console.log('about');
+        closeNav();
+        scrollToAnchor('#mabout');
+    }
+
+    function gotoProducts()
+    {
+        console.log('products');
+        closeNav();
+        scrollToAnchor('#mproducts');
+    }
+
+    (function ($) {
+        $(document).ready(function () {
+            var queryString = window.sessionStorage.getItem('anchorId');    
+            scrollToAnchor(queryString);
+            // var shiftWindow = function() { scrollBy(0, -50) };
+            // if (location.hash) shiftWindow();
+            // window.addEventListener("hashchange", shiftWindow);
+        });
+    })(jQuery);
+
+    function scrollToAnchor(anchorId) {
+        if ( anchorId == null || anchorId == "" ) {
+            return false;
+        }
+        var target = $(anchorId).offset().top;
+        $('html, body').animate({ scrollTop: target }, 500, function () {
+        });
+        window.sessionStorage.removeItem('anchorId');
+    }
+</script>
+</html>

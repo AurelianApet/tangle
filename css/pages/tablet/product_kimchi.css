@@ -1,0 +1,35 @@
+.body-container {
+    background-color: var(--pink-color);
+    margin-bottom: -0.1rem;
+}
+
+.body-container-recipes-cook-tip-pane {
+    background-color: var(--pink-color);
+}
+
+*{
+    --round-button-color : var(--pink-color)
+}
+
+.body-footer-pork-img-kimchi {
+    width: 78vw;
+    height: auto;
+    float: right;
+    margin-top: -61vw;
+    position: relative;
+    margin-right: -33vw;
+    animation: porkmove 1.5s linear infinite;
+}
+
+@keyframes porkmove1 {
+    0% {
+        margin-top: -500px;
+    }
+    50% {
+        margin-top: -480px;
+
+    }
+    100% {
+        margin-top: -500px;
+    }
+}

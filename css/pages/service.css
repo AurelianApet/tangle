@@ -1,0 +1,81 @@
+.App .container-body {
+  min-width: 100vw;
+}
+
+.body-container-footer {
+  height: 26vw;
+  padding-top: 2.6vw;
+  margin-top: 25%;
+  position: relative;
+  background-color: var(--orange-color);
+  z-index: 1;
+  position: relative;
+}
+
+.body-container-footer #footerFlow {
+  position: absolute;
+  top: -7.8125vw;
+}
+
+.body-container-footer div p {
+  font-size: 1.146vw;
+  font-family: "Pretendard-Bold";
+}
+
+.body-container-footer p {
+  cursor: url("../../images/components/body/cursor-2.png"), auto !important;
+}
+.body-container-footer-select-box {
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 3px;
+  height: 1.5625vw;
+  margin-top: 1.5625vw;
+  font-family: "Pretendard-Light";
+}
+
+.body-container-footer-logo-img {
+  margin-bottom: 1.823vw;
+  cursor: url("../../images/components/body/cursor-2.png"), auto !important;
+  /*width: 300px;*/
+  /*height: 100px;*/
+}
+
+.body-container-footer-com {
+  font-size: 0.73vw !important;
+  letter-spacing: 1px;
+  font-family: "Pretendard-ExtraLight" !important;
+}
+
+.body-container-footer-web-img {
+  width: 1.77vw;
+  height: 1.77vw;
+  margin-top: 1.5625vw;
+  cursor: url("../../images/components/body/cursor-2.png"), auto !important;
+}
+
+.contact-title {
+  margin-top: 3.9vw;
+  margin-bottom: 2.86vw;
+}
+
+.service-title {
+  color: var(--orange-color);
+  font-size: 1.3vw;
+  text-align: center;
+  margin-bottom: 1.0417vw;
+  font-family: Pretendard-Regular;
+  margin-top: 3.9vw;
+}
+
+.service-text {
+  color: var(--brown-color);
+  font-size: 1.09vw;
+  text-align: left;
+  padding: 0 8.85vw 0 9.375vw;
+  line-height: 1.4vw;
+  margin-bottom: 1.5625vw;
+  font-family: Pretendard-Regular;
+  word-break: keep-all;
+}

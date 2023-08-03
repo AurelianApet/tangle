@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/pages/recipes.css">
+    <link rel="icon" href="./favicon.jpg" type="image/x-icon">
+    <title>Recipes | Tangle</title>
+</head>
+
+<body ondragstart="return false"  id="pointerArea">
+<div id="pointer">
+</div>
+    <div class="App">
+    <div class="header">
+        <div class="header-logo">
+            <img src="./images/components/header/logo.png" alt="" class="logo" onclick="goto('index')" >
+        </div>
+        <div class="header-menu">
+            <a class="menu-tab" href="index.html#about">ABOUT<div class="menu-hover-img"></div></a>
+            <a class="menu-tab" href="index.html#product-title">PRODUCTS<div class="menu-hover-img"></div></a>
+            <a class="menu-tab" href="contact.html">CONTACT US<div class="menu-hover-img"></div></a>
+            <a class="menu-tab" href="recipes.html">RECIPES<div class="menu-hover-img"></div></a>
+            <a class="menu-tab" href="event.html">EVENT<div class="menu-hover-img"></div></a>
+            <a class="menu-tab" href="wheretobuy.html"><i class="fa fa-map-marker"></i>WHERE TO BUY<div class="menu-hover-img"></div></a>
+        </div>
+
+        <img src="./images/components/body/1.png" alt="" class="logo navi-logo" onclick="goto('index')" style="display: none;">
+        <div class="cursor-pointer" onclick="openNav()" style="display: none;"></div>
+        <div id="mySidenav" class="sidenav" style="display: none;">
+            <div class="w-100 sidenav-inner">
+                <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 4em;">
+                    <img src="./images/components/body/tangle-logo.png" class="menu-logo" onclick="document.location='index.html';">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                    </a>
+                </div>
+                <a onclick="gotoAbout();">ABOUT</a>
+                <a onclick="gotoProducts();">PRODUCTS</a>
+                <a href="contact.html">CONTACT US</a>
+                <a href="recipes.html">RECIPES</a>
+                <!-- <a href="event.html">EVENT</a> -->
+                <a href="wheretobuy.html">WHERE TO BUY</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="breadcumb position-relative">
+        <p class="breadcumb-title" onclick="goto('index')">Home</p>
+        <i class="fa fa-angle-right"></i>
+        <p class="breadcumb-subtitle">Recipes</p>
+    </div>
+    <p class="text-center contact-title">Recipes</p>
+    <p class="mingle-wiggle-text">Mingle and wiggle with tangle</p>
+
+    <div class="d-flex recipes-group">
+        <div class="owl-carousel">
+            <div class="recipes-group-each item" data-toggle="modal" data-target="#popup1">
+                <div class="position-relative">
+                    <img src="./images/components/body/recipes/recipe1.png" alt="">
+                    <div class="recipes-group-each-plus">
+                        <p>+</p>
+                    </div>
+                </div>
+                <p class="recipes-title">BULGOGI ALFREDO <br> STEAK TANGLUCCINE</p>
+                <p class="recipes-clock clock1">09:00</p>
+                <p class="recipes-content">Restaurant-quality dining from the comfort of your home with tangle bulgogi alfredo tangluccine</p>
+            </div>
+            <div class="recipes-group-each item" data-toggle="modal" data-target="#popup2">
+                <div class="position-relative">
+                    <img src="./images/components/body/recipes/recipe2.png" alt="">
+                    <div class="recipes-group-each-plus">
+                        <p>+</p>
+                    </div>
+                </div>
+                <p class="recipes-title">KIMCHI ROSÉ <br> CHICKEN TANGLUCCINE</p>
+                <p class="recipes-clock clock2">12:00</p>
+                <p class="recipes-content">Restaurant-quality dining from the comfort of your home with tangle kimchi rosé tangluccine</p>
+            </div>
+            <div class="recipes-group-each item" data-toggle="modal" data-target="#popup3">
+                <div class="position-relative">
+                    <img src="./images/components/body/recipes/recipe3.png" alt="">
+                    <div class="recipes-group-each-plus">
+                        <p>+</p>
+                    </div>
+                </div>
+                <p class="recipes-title">BULGOGI ALFREDO <br> SALAD TANGLUCCINE</p>
+                <p class="recipes-clock clock3">08:00</p>
+                <p class="recipes-content">Turn leftover ingredients into delicious meals at home with tangle bulgogi alfredo tangluccine</p>
+            </div>
+            <div class="recipes-group-each item" data-toggle="modal" data-target="#popup4">
+                <div class="position-relative">
+                    <img src="./images/components/body/recipes/recipe4.png" alt="">
+                    <div class="recipes-group-each-plus">
+                        <p>+</p>
+                    </div>
+                </div>
+                <p class="recipes-title">KIMCHI ROSÉ <br> OVEN TANGLUCCINE</p>
+                <p class="recipes-clock clock4">10:00</p>
+                <p class="recipes-content">Turn leftover ingredients into delicious meals at home with tangle kimchi rosé tangluccine</p>
+            </div>
+        </div>
+    </div>
+    <svg class="recipes-line">
+        <path id="path" d="M200,200 Q 400,200 600,200" />
+    </svg>
+
+<!--    <div class="recipes-group-line"></div>-->
+    <div class="body-container-footer">
+        <canvas id="footerFlow" width="100%"></canvas>
+        <div class="d-flex justify-content-center footer-div">
+            <p class="text-white" style="margin-right: 2.08vw" onclick="goto('service')">Terms of Service</p>
+            <p class="text-white" onclick="goto('policy')">Privacy Policy</p>
+        </div>
+        <div class="row">
+            <div class="col-md-3 d-flex justify-content-end">
+                <div class="dropdown">
+                    <button class="dropbtn">Family Site <i class="fa fa-caret-down fadown"></i><i class="fa fa-caret-up faup"></i></button>
+                    <div class="dropdown-content">
+                        <a href="https://www.samyangfoods.com/eng/index.do" target="_blank">Samyang Food</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex justify-content-center">
+                    <img src="./images/components/body/main/footer-logo.png" alt="" class="body-container-footer-logo-img">
+                </div>
+                <p class="text-white text-center body-container-footer-com">ⓒ2023. Samyang Foods Co., Ltd. All Rights Reserved. / 104, Opaesan-ro 3-gil, Seongbuk-gu, Seoul, Korea</p>
+            </div>
+            <!-- <div class="col-md-3 d-flex justify-content-start">
+                <a href="https://www.instagram.com/samyangfoods_america/" target="_blank">
+                    <img src="./images/components/body/main/3.png" alt="" class="body-container-footer-web-img"
+                         style="margin-right: 15px">
+                </a>
+                <a href="https://www.facebook.com/Samyangfoods.America/" target="_blank">
+                    <img src="./images/components/body/main/4.png" alt="" class="body-container-footer-web-img">
+                </a>
+            </div> -->
+        </div>
+    </div>
+    <div id="popup1" class="modal fade" role="dialog" style="background-color: rgba(64, 34, 15, 0.5)">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <!-- Modal content-->
+            <div class="modal-content custom-modal-content">
+                <div class="d-flex justify-content-end">
+                    <div class="cursor-pointer close custom-modal-content-close modal-close1" data-dismiss="modal">
+                    </div>
+                </div>
+                <p class="custom-modal-title">BULGOGI ALFREDO STEAK TANGLUCCINE</p>
+                <p class="custom-modal-recipes-subtitle">Restaurant-quality dining from the comfort of your home with tangle bulgogi alfredo tangluccine</p>
+                <div class="custom-modal-recipes-container">
+                    <div class="modal-content-img modal-content-img1"></div>
+                    <div class="custom-modal-recipes-container-explain">
+                        <img src="./images/components/body/product/1.png" alt="" class="modal-tangle-img">
+                        <p class="custom-modal-recipes-container-title">Ingredients</p>
+                        <p class="custom-modal-recipes-container-content">
+                            ⋄ Water 10.65 FL OZ (315ml)<br>
+                            ⋄ Tangle bulgogi alfredo tangluccine 1 ea<br>
+                            ⋄ Steak 2.8 oz<br>
+                            ⋄ Salt and pepper<br>
+                            ⋄ Mushroom 1/2 cup<br>
+                            ⋄ Sliced garlic 1/4 cup<br>
+                            ⋄ Olive oil 3 Tbsp<br>
+                            ⋄ Rosemary<br>
+                        </p>
+                        <div class="d-flex justify-content-end">
+                            <div class="custom-modal-recipes-container-clock">
+                                <p class="clock-text">Time</p>
+                                <p class="custom-modal-recipes-container-clock-content">09:00</p>
+                            </div>
+                        </div>
+                        <p class="custom-modal-recipes-container-title title-direction" >Directions</p>
+                        <p class="custom-modal-recipes-container-content">
+                            <div class="d-flex">
+                                <span class="oragne_color">1</span>
+                                <div class="custom-modal-recipes-container-content-exp">Season the steak with salt and pepper.</div>
+                            </div>
+                            <div class="d-flex">
+                                <span class="oragne_color">2</span>
+                                <div class="custom-modal-recipes-container-content-exp">
+                                    In a pan over medium-high heat, heat the olive oil until shimmering. Add the seasoned steak, sliced garlic and mushrooms and cook about 3 minutes. Remove the steak from the pan and set aside.
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <span class="oragne_color">3</span>
+                                <div class="custom-modal-recipes-container-content-exp">
+                                    Cook the tangle bulgogi alfredo tangluccine in the same pan according to package directions
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <span class="oragne_color">4</span>
+                                <div class="custom-modal-recipes-container-content-exp">
+                                    Serve hot, garnished with rosemary.
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup2" class="modal fade" role="dialog" style="background-color: rgba(64, 34, 15, 0.5)">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <!-- Modal content-->
+            <div class="modal-content custom-modal-content">
+                <div class="d-flex justify-content-end">
+                    <div class="cursor-pointer close custom-modal-content-close modal-close1" data-dismiss="modal">
+                    </div>
+                </div>
+                <p class="custom-modal-title">KIMCHI ROSÉ CHICKEN TANGLUCCINE</p>
+                <p class="custom-modal-recipes-subtitle">Restaurant-quality dining from the comfort of your home with tangle kimchi rosé tangluccine</p>
+                <div class="custom-modal-recipes-container">
+                    <div class="modal-content-img modal-content-img2"></div>
+                    <div class="custom-modal-recipes-container-explain">
+                        <img src="./images/components/body/product/4.png" alt="" class="modal-tangle-img">
+                        <p class="custom-modal-recipes-container-title">Ingredients</p>
+                        <p class="custom-modal-recipes-container-content">
+                            ⋄ Water 10.65 FL OZ (315ml)<br>
+                            ⋄ Tangle kimchi rosé tangluccine 1 ea<br>
+                            ⋄ Chicken 3 OZ<br>
+                            ⋄ Salt and pepper<br>
+                            ⋄ Butter 1tbsp<br>
+                            ⋄ Sliced onion 1/4 cup<br>
+                            ⋄ Basil 1/4 cup<br>
+                            ⋄ Parmasan cheese 1 Tbsp<br>
+                        </p>
+                        <div class="d-flex justify-content-end" style="height:1.5625vw;">
+                            <div class="custom-modal-recipes-container-clock">
+                                <p class="clock-text">Time</p>
+                                <p class="custom-modal-recipes-container-clock-content ">12:00</p>
+                            </div>
+                        </div>
+                        <p class="custom-modal-recipes-container-title title-direction" >Directions</p>
+                        <p class="custom-modal-recipes-container-content">
+                            <div class="d-flex">
+                                <span class="oragne_color">1</span>
+                                <div class="custom-modal-recipes-container-content-exp">Season the steak with salt and pepper.</div>
+                            </div>
+                            <div class="d-flex">
+                                <span class="oragne_color">2</span>
+                                <div class="custom-modal-recipes-container-content-exp">In a pan over medium-high heat, heat the butter until shimmering. Add the seasoned chicnk, sliced onion cook about 6 minutes. Remove them from the pan and set aside.</div>
+                            </div>
+                            <div class="d-flex">
+                                <span class="oragne_color">3</span>
+                                <div class="custom-modal-recipes-container-content-exp">Cook the tangle kimchi rose tangluccine in the same pan according to package directions</div>
+                            </div>
+                            <div class="d-flex">
+                                <span class="oragne_color">4</span>
+                                <div class="custom-modal-recipes-container-content-exp">Serve hot, garnished with grated parmesan cheese and chopped fresh basil.</div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup3" class="modal fade" role="dialog" style="background-color: rgba(64, 34, 15, 0.5)">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <!-- Modal content-->
+            <div class="modal-content custom-modal-content">
+                <div class="d-flex justify-content-end">
+                    <div class="cursor-pointer close custom-modal-content-close modal-close1" data-dismiss="modal">
+                    </div>
+                </div>
+                <p class="custom-modal-title">BULGOGI ALFREDO SALAD TANGLUCCINE</p>
+                <p class="custom-modal-recipes-subtitle">
+                    Turn leftover ingredients into delicious meals at home with tangle bulgogi alfredo tangluccine</p>
+                <div class="custom-modal-recipes-container">
+                    <div class="modal-content-img modal-content-img3"></div>
+                    <div class="custom-modal-recipes-container-explain">
+                        <img src="./images/components/body/product/1.png" alt="" class="modal-tangle-img">
+                        <p class="custom-modal-recipes-container-title">Ingredients</p>
+                        <p class="custom-modal-recipes-container-content">
+                            ⋄ Water 10.65 FL OZ (315ml)<br>
+                            ⋄ Tangle bulgogi alfredo tangluccine 1 ea<br>
+                            ⋄ Vegetables for salad<br>
+                            ⋄ Oriental dressing 2 Tbsp<br>
+                        </p>
+                        <div class="d-flex justify-content-end">
+                            <div class="custom-modal-recipes-container-clock">
+                                <p class="clock-text">Time</p>
+                                <p class="custom-modal-recipes-container-clock-content ">08:00</p>
+                            </div>
+                        </div>
+                        <p class="custom-modal-recipes-container-title title-direction" >Directions</p>
+                        <p class="custom-modal-recipes-container-content">
+                            <div class="d-flex">
+                                <span class="oragne_color">1</span>
+                                <div class="custom-modal-recipes-container-content-exp">Cut vegetables into bite-size pieces.</div>
+                            </div>
+                            <div class="d-flex">
+                                <span class="oragne_color">2</span>
+                                <div class="custom-modal-recipes-container-content-exp">After boiling the noodles 5 minute and 30 seconds, rinse them coldly and mix them with bulgogi sauce.</div>
+                            </div>
+                            <div class="d-flex">
+                                <span class="oragne_color">3</span>
+                                <div class="custom-modal-recipes-container-content-exp">Put the vegetables in a bowl and sprinke the cream powder.</div>
+                            </div>
+                            <div class="d-flex">
+                                <span class="oragne_color">4</span>
+                                <div class="custom-modal-recipes-container-content-exp">Add oriental dressing and mix it.</div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup4" class="modal fade" role="dialog" style="background-color: rgba(64, 34, 15, 0.5)">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <!-- Modal content-->
+            <div class="modal-content custom-modal-content">
+                <div class="d-flex justify-content-end">
+                    <div class="cursor-pointer close custom-modal-content-close modal-close1" data-dismiss="modal">
+                    </div>
+                </div>
+                <p class="custom-modal-title">KIMCHI ROSÉ OVEN TANGLUCCINE</p>
+                <p class="custom-modal-recipes-subtitle">
+                    Turn leftover ingredients into delicious meals at home with tangle kimchi rosé tangluccine</p>
+                <div class="custom-modal-recipes-container">
+                    <div class="modal-content-img modal-content-img4"></div>
+                    <div class="custom-modal-recipes-container-explain">
+                        <img src="./images/components/body/product/4.png" alt="" class="modal-tangle-img">
+                        <p class="custom-modal-recipes-container-title">Ingredients</p>
+                        <p class="custom-modal-recipes-container-content">
+                            ⋄ Water 10.65 FL OZ (315ml)<br>
+                            ⋄ Tangle kimchi rosé tangluccine 1 ea<br>
+                            ⋄ Sausage 1 ea<br>
+                            ⋄ Broccoli 1/4 cup<br>
+                            ⋄ Parika 1 ea<br>
+                            ⋄ Onion 1/4 ea<br>
+                            ⋄ Mozzarella cheese 4 Tbsp<br>
+                            ⋄ Parmesan cheese 1 Tbsp<br>
+                            ⋄ Parsley 1 tbsp<br>
+                        </p>
+                        <div class="d-flex justify-content-end" style="height:1.5625vw;">
+                            <div class="custom-modal-recipes-container-clock">
+                                <p class="clock-text">Time</p>
+                                <p class="custom-modal-recipes-container-clock-content ">10:00</p>
+                            </div>
+                        </div>
+                        <p class="custom-modal-recipes-container-title title-direction" >Directions</p>
+                        <p class="custom-modal-recipes-container-content">
+                            <div class="d-flex">
+                                <span class="oragne_color">1</span>
+                                <div class="custom-modal-recipes-container-content-exp">Slice the sausage, broccoli, parika, and onion into small pieces.</div>
+                            </div>
+                            <div class="d-flex">
+                                <span class="oragne_color">2</span>
+                                <div class="custom-modal-recipes-container-content-exp">Cook the tangle kimchi rose tangluccine adding the sausage and broccoli.</div>
+                            </div>
+                            <div class="d-flex">
+                                <span class="oragne_color">3</span>
+                                <div class="custom-modal-recipes-container-content-exp">After cooking, place mozzarella cheese and paprika on pasta and bake them in the oven in 3 minutes.</div>
+                            </div>
+                            <div class="d-flex">
+                                <span class="oragne_color">4</span>
+                                <div class="custom-modal-recipes-container-content-exp">Put parmesan cheese and parsley as toppings.</div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-to-top">
+        <p class="text-center scrollToTop">top</p>
+    </div>
+</body>
+    <script src="./js/pages/recipes/jquery.min.js" type="text/javascript"></script>
+    <script src="./js/wow.js"></script>
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/owl.carousel.js" type="text/javascript"></script>
+    <script src="./js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./js/scrollToTop.js" type="text/javascript"></script>
+    <script src="./js/main.js" type="text/javascript"></script>
+    <script src="./js/pointer.js" type="text/javascript"></script>
+    <script src="./js/pages/footer.js" type="text/javascript"></script>
+    <script src="./js/pages/recipes.js" type="text/javascript"></script>
+</html>

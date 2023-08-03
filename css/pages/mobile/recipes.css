@@ -1,0 +1,231 @@
+.recipes-group {
+    padding: 13.9vw 11.1vw 0 80.56vw;
+}
+
+.recipes-group-line {
+    background-color: var(--orange-color);
+    height: 0.83vw;
+    width: 100%;
+    margin-top: -37.2vw;
+    margin-bottom: 26.4vw;
+}
+
+.recipes-group:nth-child(2) {
+    margin-right: 0;
+}
+
+.recipes-group-each {
+    border: 1px solid var(--brown-color);
+    width: 59.4vw;
+    height: 74.17vw;
+    border-radius: 3.61vw;
+    padding: 3.33vw 4.17vw;
+    margin-bottom: 0px;
+    margin-right: 5.05vw;
+    cursor: pointer;
+    background-color: white;
+}
+
+.recipes-group-each-plus {
+    position: absolute;
+    width: 6.39vw;
+    height: 6.39vw;
+    border-radius: 50%;
+    background-color: var(--orange-color);
+    bottom: -3.06vw;
+    right: 1.39vw;
+    border: 2px solid var(--brown-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.recipes-group-each-plus p{
+    font-size: 6.39vw;
+    font-family: Pretendard-Thin;
+    color: white;
+    text-align: center;
+    margin-bottom: 0.917vw;
+}
+
+.recipes-title {
+    margin-top: 3.61vw;
+    font-size: 3.89vw;
+    color: var(--brown-color);
+    font-family: Pretendard-ExtraBold;
+    text-align: center;
+    line-height: 4.17vw;
+}
+
+.recipes-clock {
+    color: var(--orange-color);
+    font-size: 5vw;
+    text-align: center;
+    font-family: Pretendard-ExtraBold;
+}
+
+.recipes-content {
+    text-align: center;
+    color: black;
+    font-size: 1.94vw;
+    padding: 0 3.89vw;
+    line-height: 2.22vw;
+    word-break: break-word;
+}
+
+.custom-modal-content {
+    min-width: 82vw;
+    border-radius: 6.72vw;
+    padding: 3.17vw 4.94vw 3.94vw 4.94vw;
+}
+
+.custom-modal-content-close {
+    background-image: none;
+    font-size: 11.1vw;
+    font-weight: lighter;
+    color: var(--brown-color);
+    opacity: 1;
+    margin-top: -3.33vw;
+}
+
+@media (min-width: 769px) and (max-width: 1022px) {
+    .custom-modal-content-close {
+        margin-top: -4.33vw;
+        margin-right: 2vw;
+    }
+}
+
+.custom-modal-title {
+    color: var(--brown-color);
+    font-size: 4.72vw;
+    font-family: Pretendard;
+    text-align: center;
+    margin-bottom: 2.78vw;
+    line-height: 5.56vw;
+    word-break: keep-all;
+}
+
+.custom-modal-recipes-subtitle {
+    color: var(--brown-color);
+    text-align: center;
+    font-size: 2.78vw;
+    line-height: 3.61vw;
+    padding: 0 0.83vw;
+    margin-bottom: 0px;
+    font-family: Pretendard-Regular;
+}
+
+.custom-modal-recipes-container {
+    display: flex;
+    margin-top: -1.67vw;
+}
+
+.custom-modal-recipes-container-img {
+    width: 44.4vw;
+    height: 51.7vw;
+    margin-top: 4.44vw;
+}
+
+.custom-modal-recipes-container-explain {
+    height: 34.3vw;
+    overflow-y: auto;
+    padding: 0 1.39vw;
+}
+
+.custom-modal-recipes-container-explain::-webkit-scrollbar {
+    width: 2px;
+    height: 1.67vw;
+}
+
+.custom-modal-recipes-container-explain::-webkit-scrollbar-track-piece {
+    /*background-color: rgb(212, 212, 212);*/
+    background-color: transparent !important;
+    -webkit-border-radius: 2px;
+}
+
+.custom-modal-recipes-container-explain::-webkit-scrollbar-thumb:vertical {
+    height: 5.56vw;
+    background-color: #ff6c00;
+    -webkit-border-radius: 2px;
+}
+
+.custom-modal-recipes-container-title {
+    color: var(--orange-color);
+    font-family: Pretendard-Bold;
+    font-size: 4.17vw;
+    margin-bottom: 1.39vw;
+}
+
+.custom-modal-recipes-container-content {
+    font-size: 2.78vw;
+    margin-bottom: 1.94vw;
+    color: var(--brown-color);
+    font-family: Pretendard-Regular;
+}
+
+.custom-modal-recipes-container-content-exp {
+    color: var(--brown-color);
+    font-family: Pretendard-Medium;
+    width: 95%;
+    font-size: 2.78vw;
+
+}
+.custom-modal-recipes-container-clock {
+    margin-top: -5.83vw;
+    margin-right: 1.67vw;
+    background-image: url("../../../images/components/body/recipes/timer.gif");
+    background-size: 11.94vw 13.9vw;
+    height: 13.9vw;
+    width: 11.94vw;
+    background-repeat: no-repeat;
+}
+
+.custom-modal-recipes-container-clock-content {
+    color: white;
+    margin-top: -1.11vw;
+    text-align: center;
+    font-size: 2.78vw;
+    font-family: Pretendard-ExtraBold;
+}
+
+.owl-nav {
+    display: none !important;
+}
+
+.no-js .owl-carousel, .owl-carousel.owl-loaded {
+    overflow: hidden;
+}
+
+.contact-title {
+    margin-bottom: 8.33vw;
+}
+
+.mingle-wiggle-text {
+    text-align: center;
+    color: var(--brown-color);
+    font-size: 5.56vw;
+    font-family: Pretendard-Bold;
+    margin-bottom: 2.78vw;
+}
+
+.clock-text {
+    color: var(--yellow-color);
+    text-align: center;
+    font-size: 2.22vw;
+    margin-top: 3.33vw;
+    font-family: Pretendard-ExtraBold;
+}
+
+.carousel-group {
+    margin-top: 11.1vw;
+    z-index: 0;
+    margin-left: 12.2vw;
+}
+
+.oragne_color {
+    color: var(--orange-color);
+    font-family: Pretendard-Medium;
+    margin-right: 2.78vw;
+    font-size: 2.78vw;
+}

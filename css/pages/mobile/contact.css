@@ -1,0 +1,308 @@
+input, textarea, button {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+
+.contact-input {
+    font-size: 2.78vw;
+    margin-top: 5vw;
+    color: var(--brown-color);
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid var(--brown-color);
+    font-family: Pretendard-Bold;
+    /* padding-bottom: 2.78vw; */
+}
+
+.contact-input:focus {
+    outline: none;
+    border-bottom: 2px solid var(--orange-color);
+}
+
+.contact-radio {
+    width: 13.9vw;
+    height: 13.9vw;
+    border: 1.39vw solid #dbdbdb;
+    margin-right: 2.78vw;
+}
+
+.input-group {
+    position: relative;
+    padding: 0 8.33vw;
+    border: none;
+    margin-bottom: 2.78vw;
+}
+
+.input-group .placeholder {
+    position: absolute;
+    top: 5vw;
+    left: 7.78vw;
+    font-size: 2.78vw;
+    font-family: Pretendard-Bold;
+    color: var(--gray);
+    transition: 0.2s top ease-in-out;
+    opacity: 0;
+}
+
+.input-group.edited .placeholder {
+    top:0;
+    transition: 0.3s top  ease-in-out opacity;
+    font-size: 2.22vw;
+    opacity: 1;
+    padding: 2px 0;
+}
+
+.input-group.edited .contact-input::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    opacity: 0;
+}
+
+.input-group.edited .contact-input:-moz-placeholder {
+    opacity: 0;
+}
+
+.input-group.edited .contact-input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    opacity: 0;
+}
+
+.input-group.edited .contact-input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    opacity: 0;
+}
+
+.input-group:focus .placeholder {
+    top:0;
+    transition: 0.3s top  ease-in-out opacity;
+    font-size: 2.22vw;
+    opacity: 1;
+}
+
+.contact-input:focus ~ .input-group .placeholder {
+    top:0;
+    transition: 0.3s top  ease-in-out opacity;
+    font-size: 2.22vw;
+    opacity: 1;
+}
+
+.contact-radio-text {
+    font-size: 2.22vw;
+    margin-right: 0px;
+    padding: 0 9.17vw;
+    margin-bottom: 5.83vw;
+}
+
+.contact-checkbox-text {
+    font-size: 6.94vw;
+}
+
+.btn-send {
+    padding: 1.11vw;
+    width: 100%;
+    border: 3px solid var(--brown-color);
+    background-color: transparent;
+    text-align: center;
+    color: var(--brown-color);
+    font-family: Klein Trial;
+    font-size: 3.89vw;
+    margin-top: 13.9vw;
+    margin-bottom: 8.33vw;
+    border-radius: 2.78vw;
+    box-shadow: 2px 2px 2px var(--brown-color);
+}
+
+.btn-send:hover {
+    color: white;
+    background-color: var(--brown-color);
+}
+
+.letter {
+    position: absolute;
+    left: 2.78vw;
+    top: 1.39vw;
+    width: 18.15vw;
+    height: 19.76vw;
+    z-index: -1;
+    -webkit-animation-name: letter; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: letter;
+    animation-duration: 28s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes letter {
+    0%   {top: 1.39vw}
+    50%  {top: 2.78vw}
+    100% {top: 1.39vw}
+}
+
+/* Standard syntax */
+@keyframes letter {
+    from { transform: translate(0px,  -125vw); }
+    4%  { transform: translate(1rem, 12.5vw); }
+    8%  { transform: translate(2rem, 1.11vw); }
+    12%  { transform: translate(3em, 13vw); }
+    16%  { transform: translate(4rem, 0.69vw); }
+    20%  { transform: translate(5rem, 12.5vw); }
+    24%  { transform: translate(6rem, 1.11vw); }        
+    28%  { transform: translate(7rem, 13vw); }
+    32%  { transform: translate(8rem, 2.08vw); }
+    36%  { transform: translate(9rem, 12.5vw); }
+    40%  { transform: translate(10rem, 1.11vw); }    
+    44%  { transform: translate(11rem, 13vw); }
+    48%  { transform: translate(12rem, 0.69vw); }    
+    52%  { transform: translate(13rem, 12.5vw); }
+    56%  { transform: translate(14rem, 1.11vw); }    
+    60%  { transform: translate(15rem, 13vw); }
+    64%  { transform: translate(16rem, 0.69vw); }
+    68%  { transform: translate(17rem, 12.5vw); }
+    72%  { transform: translate(18rem, 1.11vw); }   
+    76%  { transform: translate(19rem, 13vw); }
+    80%  { transform: translate(20rem, 0.69vw); }    
+    84%  { transform: translate(21rem, 12.5vw); }
+    88%  { transform: translate(22rem, 1.11vw); }   
+    92%  { transform: translate(23rem, 13vw); }
+    96%  { transform: translate(24rem, 0.69vw); }    
+    to   { transform: translate(25rem, 12.5vw); }    
+}
+
+.custom-modal-content {
+    min-width: 100vw;
+    border-radius: 9.4vw;
+    padding: 3.61vw 6.39vw 12.5vw 6.39vw;
+}
+
+.custom-modal-content-close {
+    font-size: 8.33vw;
+    font-family: Pretendard-Thin;
+    color: var(--brown-color) !important;
+    opacity: 1;
+}
+
+.custom-modal-content-img {
+    width: 22.3vw;
+    height: 7.61vw;
+    margin-bottom: 3.06vw;
+}
+
+.custom-modal-content-text {
+    color: var(--orange-color);
+    text-align: center;
+    font-size: 2.5vw;
+    padding: 0 3.33vw;
+    font-family: Pretendard-SemiBold;
+}
+
+.rd-container {
+    display: block;
+    padding-top: 3px;
+    position: relative;
+    padding-left: 6.94vw;
+    margin-bottom: -6.39vw;
+    margin-right: 5.83vw;
+    cursor: pointer;
+    font-size: 2.22vw;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Pretendard-SemiBold;
+}
+
+.rd-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5.56vw;
+    width: 5.56vw;
+    border: 3px solid #ddd;
+    border-radius: 50%;
+}
+
+.rd-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.rd-container input:checked ~ .checkmark {
+    background-image: url('../../../images/components/body/contact/radio.png');
+    background-repeat: no-repeat;
+    background-size: 5.56vw 6.39vw;
+    background-position: center;
+    border: none;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.ck-container {
+    display: block;
+    position: relative;
+    padding-left: 5vw;
+    margin-bottom: -8.61vw;
+    margin-right: 7.78vw;
+    margin-top: 5vw;
+    cursor: pointer;
+    font-size: 1.94vw;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Pretendard-Regular;
+}
+
+.ck-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.ck-checkmark {
+    position: absolute;
+    top: 2.22vw;
+    left: 0;
+    height: 1.67vw;
+    width: 1.67vw;
+    border: 1.67vw solid #ddd;
+    border-radius: 50%;
+}
+
+.ck-container:hover input ~ .ck-checkmark {
+    background-color: #ccc;
+}
+
+.ck-container input:checked ~ .ck-checkmark {
+    background-image: url('../../../images/components/body/contact/ckeckbox.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 3.06vw 3.06vw;
+    border: none;
+    width: 3.06vw;
+    height: 3.06vw;
+}
+
+.ck-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.contact-box-div {
+    margin-bottom: 30.6vw;
+    margin-top: 13.9vw;
+    padding: 0 2.78vw;
+}

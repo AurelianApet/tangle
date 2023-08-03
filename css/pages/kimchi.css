@@ -1,0 +1,293 @@
+* {
+    --round-button-color: #ed3d75 !important;
+}
+
+.App .container-body {
+    width: 100vw;
+}
+
+.body-container-cooking-left {
+    border-right: 2px solid var(--pink-color);
+    padding-right: 5.2vw;
+}
+
+.body-container-cooking-left-title {
+    font-size: 2.45vw;
+    margin-bottom: 2.6vw;
+    color: var(--brown-color);
+    margin-top: -0.9375vw;
+    font-family: Pretendard-extrabold;
+    display: flex;
+    justify-content: center;
+}
+
+.body-container-cooking-left-kimchi {
+    width: 9.48vw;
+    height: 7.92vw;
+}
+
+.body-container-cooking-left-kimchi-bowl {
+    height: 5.99vw;
+}
+
+.body-container-cooking-left-content {
+    margin-top: 0.625vw;
+    font-size: 1.25vw;
+    margin-bottom: 2.6vw;
+    color: #3c2415;
+    font-family: Pretendard-extraBold;
+}
+
+.body-container-cooking-right {
+    padding-left: 7vw;
+}
+
+.body-container-cooking-direction {
+    color: #3c2415;
+    font-size: 1.51vw;
+    line-height: 1.67vw;
+    font-family: Pretendard-extraBold;
+    margin-top: 1vw;
+}
+
+.body-container-cooking-right-step-first {
+    margin-bottom: 2.08vw
+}
+
+.body-container-cooking-right-step-first-arrow {
+    margin-left: 6.77vw
+}
+
+.body-container-cooking-right-step-second {
+    margin-top: -1.5625vw
+}
+
+.body-container-cooking-right-step-third {
+    margin-top: 0.92vw;
+}
+
+.body-container-cooking-right-step-first-img {
+    width: 12.5vw;
+    height: 13.23vw;
+    margin-right: 2.86vw;
+}
+
+.body-container-cooking-right-step-second-img {
+    width: 13.23vw;
+    height: 11.98vw;
+    margin-top: -1.3vw;
+}
+
+.body-container-cooking-right-step-third-img {
+    width: 14.6vw;
+    height: 10.2vw;
+    margin-right: 1.04vw;
+    margin-top: -2.7vw;
+}
+
+.body-container-cooking-right-step-second-arrow {
+    margin-top: 1.04vw;
+    margin-right: 2.08vw;
+
+}
+
+.body-container-middle-cooking-tip-title {
+    font-family: Pretendard;
+    font-size: 2.45vw;
+    margin-top: 9.9vw;
+    color: var(--brown-color);
+    margin-bottom: 2.08vw;
+}
+
+.body-container-middle-cooking-tip {
+    width: 10.8vw;
+    height: 10.8vw;
+    background-color: var(--pink-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4vw;
+    margin-left: 4vw;
+}
+
+.body-container-middle-cooking-tip-time {
+    color: white;
+    font-size: 1.5625vw;
+    font-family: Pretendard;
+}
+
+.body-container-middle-cooking-tip-time sup, sub {
+    font-size: 0.9375vw !important;
+}
+
+.body-container-middle-cooking-tip-content {
+    margin-top: -5px;
+    color: #f9ed32;
+    font-size: 2.08vw;
+    font-family: Pretendard;
+}
+
+.body-container-middle-review {
+    margin-top: 8.7vw;
+    display: flex;
+    justify-content: center;
+}
+
+.body-container-middle-review-each {
+    width: 18.3vw;
+    height: 18.3vw;
+    background-color: #f9f9f9;
+    margin-right: 4.95vw;
+    border-radius: 2.6vw;
+    box-shadow: 1px 1px 5px lightgrey;
+    padding: 3.646vw 1.72vw 0 1.72vw;
+}
+
+.body-container-middle-review-text {
+    font-size: 1.25vw;
+    line-height: 1.46vw;
+    margin-top: 1.5625vw;
+}
+
+.body-container-middle-review-author {
+    font-size: 1.09vw;
+    margin-top: 1.5625vw;
+}
+
+.body-container-middle-review-img {
+    margin-top: -6.25vw;
+}
+
+.body-container-middle-review-img img {
+  /*animation: image-bounce 1s ease infinite alternate;*/
+}
+
+.body-container-footer {
+  height: 26.09vw;
+  padding-top: 2.6vw;
+  position: relative;
+  background-color: var(--orange-color);
+  z-index: 1;
+  position: relative;
+}
+
+.body-container-footer p {
+    cursor: url("../../images/components/body/cursor-2.png"), auto !important;
+}
+.body-container-footer #footerFlow {
+  position: absolute;
+  top: -7.8125vw;
+}
+
+.body-container-footer-select-box {
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 3px;
+    height: 1.5625vw;
+    margin-top: 1.5625vw;
+    font-family: Pretendard-Light;
+}
+
+.body-container-footer-logo-img {
+    margin-bottom: 1.83vw;    
+    cursor: url("../../images/components/body/cursor-2.png"), auto !important;
+}
+
+.body-container-footer-com {
+    font-size: 0.73vw !important;
+    letter-spacing: 1px ;
+    font-family: Pretendard-ExtraLight !important;
+}
+
+.body-container-footer-web-img {
+    width: 1.77vw;
+    height: 1.77vw;
+    margin-top: 1.5625vw;
+    cursor: url("../../images/components/body/cursor-2.png"), auto !important;
+}
+
+.product-slide-img1-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.product-slide-img2-div {
+    width: 43.177vw;
+}
+
+.product-slide-img1 {
+    width: 40vw;
+    height:auto;
+}
+
+.product-slide-img2 {
+    width:100%;
+    height:auto;
+    border-radius: 2.65625vw;
+}
+
+@media screen and (max-width: 1630px) {
+    .body-container-cooking-left {
+        padding-right: 3.646vw;
+    }
+    .body-container-cooking-right {
+        padding-left: 5.2vw;
+    }
+    .body-container-cooking-left-title {
+        font-size: 2.1875vw;
+    }
+
+    .body-container-cooking-left-content {
+        font-size: 0.9375vw;
+    }
+    .body-container-cooking-direction {
+        font-size: 1.146vw;
+        line-height: 1.25vw;
+    }
+    .body-container-cooking-left-kimchi {
+        width: 6.77vw;
+        height: 5.65vw;
+    }
+    .body-container-cooking-right-step-first-img {
+        width: 8.9vw;
+        height: 9.427vw;
+    }
+    .body-container-cooking-left-water {
+        width: 5.78125vw;
+        height: 11.46vw;
+    }
+    .body-container-cooking-left-pot {
+        width: 9.58vw;
+        height: 4.58vw;
+    }
+    .body-container-cooking-right-step-second-img {
+        width: 9.427vw;
+        height: 8.54vw;
+    }
+    .body-container-cooking-right-step-third-img {
+        width: 10.417vw;
+        height: 7.29vw;
+    }
+    .body-container-middle-cooking-tip-title {
+        font-size: 2.1875vw;
+    }
+    .body-container-middle-cooking-tip-content {
+        font-size: 1.93vw;
+    }
+    .body-container-middle-review-each {
+        width: 15.36vw;
+        height: 16.93vw;
+        padding: 2.6vw 0.78125vw 0 0.78125vw;
+    }
+    .body-container-middle-review-text {
+        font-size: 0.9375vw;
+    }
+}
+
+.cooking-direction-second-div {
+    margin-right: 2vw;
+}

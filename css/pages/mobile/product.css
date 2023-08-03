@@ -1,0 +1,540 @@
+.header-advertice {
+    padding: 3.33vw 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header-advertice-pane {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.94vw;
+    margin-bottom: 1.94vw;
+    background-color: #f8f8f8;
+    padding: 3.61vw 2.5vw;
+    border-radius: 1.39vw;
+}
+
+.header-advertice-pane-img {
+    width: 13.13vw;
+    height: auto;
+}
+
+.header-advertice-pane-second-img {
+    width: 13.13vw;
+    height: auto;
+}
+
+.header-advertice-pane-title {
+    color: var(--brown-color);
+    font-family: Pretendard-Bold;
+    line-height: 3.06vw;
+    font-size: 1.94vw;
+}
+
+.header-separate-pane {
+    background-color: #f8f8f8;
+    height: 3px;
+}
+
+.body-container {
+    margin-top: 7.2vw;
+    padding: 4.72vw 7.2vw;
+    margin-bottom: -0.1rem;
+    width: 100%;
+    background-color: var(--orange-color);
+}
+
+.bread-crumb {
+    color: white;
+    font-size: 2.78vw;
+    font-family: 'Pretendard-Medium';
+    display: flex;
+    align-items: center;
+}
+
+.bread-crumb-title {
+    margin-right: 3.33vw;
+}
+
+.bread-crumb-icon {
+    font-size: 4.17vw;
+}
+
+.bread-crumb-text {
+    margin-left: 3.33vw;
+}
+
+.body-container-carousel {
+    margin-top: 4.17vw;
+}
+
+.carousel-inner {
+    border-radius: 4.17vw !important;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.carousel-indicators-container {
+    height: 1.39vw;
+}
+
+.carousel-item-each {
+    background-color: var(--yellow-color);
+    padding: 8.06vw 5.83vw;
+    width: 51.4vw;
+    height: 48.3vw;
+    border-radius: 4.17vw !important;
+}
+
+.carousel-item-each1 {
+    background-color: var(--yellow-color);
+    padding: 11.9vw 5.83vw;
+    width: 51.4vw;
+    height: 48.3vw;
+    border-radius: 4.17vw !important;
+}
+
+.carousel-indicators {
+    bottom: -6.94vw;
+}
+
+.carousel-indicators li {
+    width: 1.39vw;
+    height: 1.39vw;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.carousel-indicators .active {
+    background-color: var(--brown-color);
+}
+
+.body-container-title {
+    margin-top: 8.33vw;
+    color: var(--brown-color);
+    font-size: 6.11vw;
+    font-family: Pretendard;
+    text-align: center;
+    line-height: 7.5vw;
+}
+
+.body-container-title-gram {
+    margin-top: 2.78vw;
+    color: var(--brown-color);
+    font-family: Pretendard-Bold;
+    font-size: 2.78vw;
+    text-align: center;
+    margin-bottom: 2.78vw;
+}
+
+.body-container-title-content {
+    color: var(--brown-color);
+    text-align: center;
+    font-size: 2.5vw;
+    line-height: 3.33vw;
+    font-family: Pretendard-Medium;
+}
+
+.body-container-title-separator {
+    margin-top: 3.61vw;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-bottom: 3.61vw;
+}
+
+.body-container-title-exp {
+    font-size: 2.78vw;
+    font-family: Pretendard-ExtraBold;
+    color: white;
+    text-align: center;
+}
+
+.exp-description {
+    font-family: Pretendard-Light;
+    font-size: 2.5vw;
+}
+
+.carousel-control {
+    display: flex;
+    justify-content: center;
+    padding-top:1.39vw;
+}
+
+.carousel-control img {
+    width: 6.39vw;
+    height: 6.39vw;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: static;
+    opacity: 1;
+    margin-top: 5.56vw;
+}
+
+.body-footer-pork-img {
+    width: 70.2vw;
+    height: auto;
+    float: right;
+    margin-top: -61.8vw;
+    position: relative;
+    margin-right: -16.7vw;
+    animation: porkmove 1.5s linear infinite;
+}
+
+@keyframes porkmove {
+    0% {
+        margin-top: -63vw;
+    }
+    50% {
+        margin-top: -61.8vw;
+    }
+    100% {
+        margin-top: -63vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .body-footer-pork-img {
+        margin-top: -74.8vw;
+    }
+    @keyframes porkmove {
+        0% {
+            margin-top: -76vw;
+        }
+        50% {
+            margin-top: -74.8vw;
+        }
+        100% {
+            margin-top: -76vw;
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .body-footer-pork-img {
+        margin-top: -79.8vw;
+    }
+    @keyframes porkmove {
+        0% {
+            margin-top: -81vw;
+        }
+        50% {
+            margin-top: -79.8vw;
+        }
+        100% {
+            margin-top: -81vw;
+        }
+    }
+}
+
+.body-container-recipes-pane {
+    margin-top: 0px;
+}
+
+.body-container-recipes-pane-title {
+    display: flex;
+    justify-content: center;
+    font-size: 5vw;
+    font-family: Pretendard-ExtraBold;
+    color: var(--yellow-color);
+    margin-bottom: 6.67vw;
+    margin-top: 0px;
+    align-items: center;
+}
+
+.body-container-recipes-pane-img {
+    padding: 0 3.89vw;
+}
+
+.body-container-recipes-pane-img img {
+    height: auto;
+}
+
+.body-container-recipes-check-title {
+    color: var(--brown-color);
+    font-size: 3.89vw;
+    text-align: center;
+    margin-top: 11.1vw;
+    margin-bottom: 6.94vw;
+    font-family: Pretendard-extrabold;
+}
+
+.body-container-recipes-check-first {
+    width: 20.9vw;
+    height: 17.4vw;
+}
+
+.body-container-recipes-check-first-second {
+    height: 33.3vw;
+    margin-top: 4.17vw;
+    margin-bottom: 4.17vw;
+}
+
+.body-container-recipes-check-first-second1 {
+    height: 15.6vw;
+    width: auto;
+    margin-top: 1.94vw;
+    margin-bottom: 0px;
+}
+
+.body-container-recipes-check-text {
+    margin-top: 2.22vw;
+    font-size: 2.5vw;
+    color: var(--brown-color);
+    text-align: center;
+    font-family: Pretendard-ExtraBold;
+}
+
+.body-container-recipes-check-second {
+    width: 15.4vw;
+    height: 17.83vw;
+    margin-bottom: -2px;
+}
+
+.body-container-recipes-check-third {
+    width: 23.39vw;
+    height: 11.1vw;
+    margin-top: 1.67vw;
+    margin-bottom: 4.17vw;
+}
+
+.body-container-recipes-cook-title {
+    color: var(--brown-color);
+    font-size: 3.89vw;
+    text-align: center;
+    margin-top: 18.06vw;
+    margin-bottom: 10.56vw;
+    font-family: Pretendard-extrabold;
+}
+
+.body-container-recipes-cook-pane {
+    padding: 0 5.56vw;
+    margin-bottom: 7.5vw;
+}
+
+.body-container-recipes-cook-pane-first-img {
+    width: 25.28vw;
+    height: 26.67vw;
+    margin-right: 3.61vw;
+}
+
+.body-container-recipes-cook-pane-text {
+    color: var(--brown-color);
+    font-size: 2.22vw;
+    margin-top: 3.33vw;
+    font-family: Pretendard-ExtraBold;
+}
+
+.recipes-arrow-first {
+    width: 6.486vw;
+    height: 5.43vw;
+    margin-top: 6.39vw;
+    margin-left: 13.9vw;
+}
+
+.body-container-recipes-cook-pane-second-text {
+    text-align: right;
+}
+
+.body-container-recipes-cook-pane-second-img {
+    width: 26.82vw;
+    height: 23.94vw;
+    margin-left: 2px;
+    margin-top: 15.83vw;
+}
+
+.recipes-arrow-second {
+    width: 7.9vw;
+    height: 6.61vw;
+    float: right;
+    margin-right: 39.72vw;
+    margin-top: -3.06vw;
+}
+
+.body-container-recipes-cook-pane-third-img {
+    width: 29.53vw;
+    height: 20.6vw;
+    margin-right: 4.44vw;
+    margin-left: 2.78vw;
+}
+
+.body-container-recipes-cook-tip {
+    color: var(--brown-color);
+    font-size: 3.89vw;
+    font-family: Pretendard-extrabold;
+    text-align: center;
+    margin-top: 13.9vw;
+}
+
+.body-container-recipes-cook-tip-pane {
+    width: 19.4vw;
+    height: 19.4vw;
+    margin-top: 6.67vw;
+    background-color: var(--orange-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    color: white;
+    font-size: 2.5vw;
+    text-align: center;
+    font-family: Pretendard-ExtraBold;
+}
+
+.tip-content {
+    margin-top: 1.39vw;
+    text-align: center;
+    font-size: 3.06vw;
+    font-family: Pretendard-Bold;
+    color: var(--yellow-color);
+}
+
+.body-container-recipes-cook-review {
+    margin-top: 36.7vw;
+    border-radius: 4.17vw;
+    background-color: #f8f8f8;
+    width: 23.6vw;
+    height: 30.9vw;
+    box-shadow: 1px 1px 3px lightgrey;
+    padding: 2px 2px;
+    animation: image-bounce 1s ease infinite alternate;
+}
+
+.body-container-middle-review-each1 {
+    animation: image-bounce 0.8s ease infinite alternate;
+}
+
+.body-container-middle-review-each2 {
+    margin-top: 2.78vw;
+    animation: image-bounce 1s ease-in infinite alternate-reverse;
+    animation-delay: 200ms;
+}
+
+.body-container-middle-review-each3 {
+    margin-top: 2.78vw;
+    animation-delay: 400ms;
+    animation: image-bounce 1s ease-in-out infinite alternate;
+}
+
+.body-container-middle-review-each4 {
+    margin-right: 0;
+    animation-delay: 600ms;
+    animation: image-bounce 0.8s ease-out infinite alternate-reverse;
+}
+
+@keyframes image-bounce {
+    0% {
+        transform: translateY(0px) scaleY(1.0) scaleX(1.0);
+    }
+    100% {
+        transform: translateY(-2.78vw) scaleY(1.02) scaleX(1.02);
+    }
+}
+
+.body-container-middle-review-text {
+    margin-top: 2.5vw;
+    font-size: 1.5vw;
+    line-height: 2.72vw;
+    font-family: Pretendard-Regular;
+    margin-right:1.39vw;
+    margin-left:1.39vw;
+}
+
+.star-img {
+    margin-top: 4.44vw;
+    height: 3.61vw;
+}
+
+.body-container-middle-review-author {
+    margin-top: 1.39vw;
+    font-size: 1.67vw;
+    font-family: Pretendard-Regular;
+}
+
+.body-container-recipes-cook-bowl {
+    width: 100vw;
+    height: 55vw;
+}
+
+.how-to-make-logo-img {
+    margin-left: 2.5vw;
+    margin-right: 1.39vw;
+}
+
+.checklist-first-div {
+    margin-right: 7.8vw;
+}
+
+.cooking-direction-first-div {
+    padding-top: 2.78vw;
+}
+
+.cooking-direction-first-img {
+    width: 4.09vw;
+    height: 4.2vw;
+}
+
+.cooking-direction-second-p {
+    margin-right: 4.17vw;
+    margin-top: 3.89vw;
+}
+
+.cooking-direction-second-div {
+    margin-top: -22.2vw;
+}
+
+.cooking-direction-second-img1{
+    margin-top: 2.78vw;
+    width: 4.14vw;
+    height: 4.7vw;
+}
+
+.cooking-direction-third-div {
+    margin-top: 6.11vw;
+    justify-content: space-around;
+}
+
+.cooking-direction-third-div1 {
+    padding-top: 3.06vw;
+}
+
+.cooking-direction-third-img {
+    width: 4.14vw;
+    height: 4.64vw;
+}
+
+.cooking-time-tip-div {
+    padding: 0 6.67vw;
+}
+
+.header-div {
+    margin-left: 4.17vw;
+}
+
+.product-header-img2 {
+    width: 51.4vw;
+    height: 48.3vw;
+    border-radius: 4.17vw;
+}
+
+.product-header-img1 {
+    width:100%;
+    height: auto;
+}
+
+.header-img-slider-option {
+    margin-right: 1.11vw;
+}
+
+.cursor1 {
+    margin-right: 5.56vw;
+}
+
+.cooking-direction-div {
+    justify-content: space-around;
+}

@@ -1,0 +1,14 @@
+.service-title {
+    font-size: 1.5rem;
+    color: var(--orange-color);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.service-text {
+    font-size: 1.39rem;
+    text-align: left;
+    color: var(--brown-color);
+    padding: 1rem 4rem;
+    margin-bottom: 3rem;
+}

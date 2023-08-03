@@ -1,0 +1,399 @@
+.contact-input::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #909;
+}
+.contact-input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #909;
+  opacity: 1;
+}
+.contact-input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #909;
+  opacity: 1;
+}
+.contact-input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #909;
+}
+
+.App .container-body {
+  min-width: 100vw;
+}
+
+.contact-input {
+  font-size: 1.3vw;
+  margin-top: 1.04vw;
+  color: var(--brown-color);
+  width: 34.9vw;
+  border: none;
+  /* border-bottom: 3px solid #a09187; */
+  border-bottom: 3px solid var(--brown-color);
+  font-family: Pretendard-Bold;
+}
+
+.contact-input:focus {
+  outline: none;
+  border-bottom: 3px solid var(--orange-color);
+}
+
+.input-group {
+  margin: 0.78125vw 0;
+  position: relative;
+}
+
+.input-group .placeholder {
+  position: absolute;
+  top: 1.09vw;
+  left: -1px;
+  font-size: 1.3vw;
+  font-family: Pretendard-Bold;
+  color: var(--gray);
+  transition: 0.2s top ease-in-out;
+  opacity: 0;
+}
+
+.input-group.edited .placeholder {
+  top: 0;
+  transition: 0.3s top ease-in-out opacity;
+  font-size: 0.83vw;
+  opacity: 1;
+}
+
+.input-group.edited .contact-input::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  opacity: 0;
+}
+.input-group.edited .contact-input:-moz-placeholder {
+  opacity: 0;
+}
+.input-group.edited .contact-input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  opacity: 0;
+}
+
+.input-group.edited .contact-input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  opacity: 0;
+}
+
+.intput-group:focus .placeholder {
+  top: 0;
+  transition: 0.3s top ease-in-out opacity;
+  font-size: 0.83vw;
+  opacity: 1;
+}
+
+.contact-input:focus ~ .input-group .placeholder {
+  top: 0;
+  transition: 0.3s top ease-in-out opacity;
+  font-size: 0.83vw;
+  opacity: 1;
+}
+
+.contact-radio {
+  width: 1.3vw;
+  height: 1.3vw;
+  border: 0.26vw solid #dbdbdb;
+  margin-right: 0.52vw;
+}
+
+.contact-radio-text {
+  margin-right: 2.76vw;
+}
+
+.contact-checkbox-text {
+  font-size: 0.78125vw;
+}
+
+.btn-send {
+  width: 100%;
+  border: 2px solid var(--brown-color);
+  background-color: transparent;
+  text-align: center;
+  color: var(--brown-color);
+  font-family: Klein Trial;
+  font-weight: bold;
+  font-size: 1.77vw;
+  margin-top: 2.6vw;
+  margin-bottom: 2.6vw;
+  border-radius: 1.04vw;
+  box-shadow: 2px 2px 3px var(--brown-color);
+  cursor: url("../../images/components/body/cursor-2.png"), auto !important;
+}
+
+.btn-send:hover {
+  color: white;
+  background-color: var(--brown-color);
+}
+
+.body-container-footer {
+  height: 26.09vw;
+  padding-top: 2.6vw;
+  position: relative;
+  background-color: var(--orange-color);
+  z-index: 1;
+  position: relative;
+  margin-top: 10.417vw;
+}
+
+.body-container-footer p {
+  cursor: url("../../images/components/body/cursor-2.png"), auto !important;
+}
+.body-container-footer #footerFlow {
+  position: absolute;
+  top: -7.8125vw;
+}
+
+.body-container-footer div p {
+  font-size: 1.146vw;
+  font-family: Pretendard-Bold;
+}
+
+.body-container-footer-select-box {
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 3px;
+  height: 1.5625vw;
+  margin-top: 1.5625vw;
+  font-family: Pretendard-Light;
+}
+
+.body-container-footer-logo-img {
+  margin-bottom: 1.823vw;
+  cursor: url("../../images/components/body/cursor-2.png"), auto !important;
+}
+
+.body-container-footer-com {
+  font-size: 0.73vw !important;
+  letter-spacing: 1px;
+  font-family: Pretendard-ExtraLight !important;
+}
+
+.body-container-footer-web-img {
+  width: 1.77vw;
+  height: 1.77vw;
+  margin-top: 1.5625vw;
+  cursor: url("../../images/components/body/cursor-2.png"), auto !important;
+}
+
+.custom-modal-content {
+  max-width: 36.46vw;
+  border-radius: 2.6vw;
+  padding: 0.78125vw 1.3vw 4.17vw 1.3vw;
+}
+
+.custom-modal-content-close {
+  font-size: 4.17vw;
+  font-weight: lighter;
+  color: var(--brown-color);
+  opacity: 1;
+  margin-top: -0.78125vw;
+  cursor: url("../../images/components/body/cursor-2.png"), auto !important;
+}
+
+.custom-modal-content-close:hover {
+  color: var(--orange-color) !important;
+}
+
+.custom-modal-content-img {
+  width: 9.6875vw;
+  height: 3.28125vw;
+  margin-top: 1.5625vw;
+  margin-bottom: 2.08vw;
+}
+
+.custom-modal-content-text {
+  color: var(--orange-color);
+  text-align: center;
+  font-size: 1.09vw;
+  font-family: Pretendard-Bold;
+  line-height: 1.3vw;
+  word-break: keep-all;
+}
+
+.letter-wrapper {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 5.2vw;
+}
+
+.letter {
+  background: url("../../images/components/body/contact/letter.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center top;
+  animation: letter-falling 8s linear infinite;
+  width: 13.6vw;
+  height: 14.1vw;
+}
+
+.content-group {
+  width: 31.25vw;
+}
+
+@media screen and (min-width: 1480px) {
+  .letter-wrapper {
+    left: 7.29vw;
+  }
+  .content-group {
+    width: 34.9vw;
+  }
+}
+
+@keyframes letter-falling {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(18deg);
+  }
+
+  10% {
+    transform: translate3d(0.52vw, 2.6vw, 0) rotate(0deg);
+  }
+
+  20% {
+    transform: translate3d(1.04vw, 5.73vw, 0) rotate(36deg);
+  }
+
+  30% {
+    transform: translate3d(0px, 8.85vw, 0) rotate(0deg);
+  }
+
+  40% {
+    transform: translate3d(1.04vw, 12.5vw, 0) rotate(36deg);
+  }
+
+  50% {
+    transform: translate3d(0.26vw, 16.16vw, 0) rotate(0deg);
+  }
+
+  60% {
+    transform: translate3d(-0.52vw, 19.8vw, 0) rotate(36deg);
+  }
+
+  70% {
+    transform: translate3d(+0.52vw, 23.4375vw, 0) rotate(0deg);
+  }
+
+  80% {
+    transform: translate3d(-0.52vw, 27.6vw, 0) rotate(0deg);
+  }
+
+  90% {
+    transform: translate3d(+0.26vw, 31.25vw, 0) rotate(36deg);
+  }
+
+  91% {
+    transform: translate3d(0px, 31.25vw, 0) rotate(18deg);
+  }
+
+  95% {
+    transform: translate3d(0px, 0, 0) rotate(18deg);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0) rotate(18deg);
+  }
+}
+
+/* 수정된 레디오 버튼 -------------------- */
+.rd-container {
+  display: block;
+  position: relative;
+  padding-left: 1.823vw;
+  margin-bottom: 0.625vw;
+  margin-right: 1.5625vw;
+  font-size: 1.146vw;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: Pretendard-SemiBold;
+  cursor: url("../../images/components/body/cursor-2.png"), auto;
+}
+
+.rd-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.46vw;
+  width: 1.46vw;
+  border: 0.26vw solid #ddd;
+  border-radius: 50%;
+}
+
+.rd-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.rd-container input:checked ~ .checkmark {
+  background-image: url("../../images/components/body/contact/radio.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  background-color: transparent;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* 수정된 체크복스 -------------------------- */
+
+.ck-container {
+  display: block;
+  position: relative;
+  padding-left: 1.823vw;
+  margin-bottom: 0.625vw;
+  margin-right: 1.5625vw;
+  font-size: 1.146vw;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: Pretendard-SemiBold;
+  cursor: url("../../images/components/body/cursor-2.png"), auto;
+}
+
+.ck-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.ck-checkmark {
+  position: absolute;
+  top: 0.26vw;
+  left: 0;
+  height: 1.04vw;
+  width: 1.04vw;
+  border: 3px solid #ddd;
+  border-radius: 0.417vw;
+}
+
+.ck-container:hover input ~ .ck-checkmark {
+  background-color: #ccc;
+}
+
+.ck-container input:checked ~ .ck-checkmark {
+  background-image: url("../../images/components/body/contact/ckeckbox.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  background-color: transparent;
+}
+
+.ck-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}

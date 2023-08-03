@@ -1,0 +1,12 @@
+.body-container {
+    background-color: var(--pink-color);
+    margin-bottom: -0.1rem;
+}
+
+.body-container-recipes-cook-tip-pane {
+    background-color: var(--pink-color);
+}
+
+*{
+    --round-button-color : var(--pink-color)
+}

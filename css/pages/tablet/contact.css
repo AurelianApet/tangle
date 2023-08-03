@@ -1,0 +1,299 @@
+input, textarea, button {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+}
+
+.contact-input {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    color: var(--brown-color);
+    border: none;
+    width: 100%;
+    border-bottom: 3px solid var(--brown-color);
+    font-family: Pretendard-Bold;
+    /* padding-bottom: 10px; */
+}
+
+.contact-input:focus {
+    outline: none;
+    border-bottom: 5px solid var(--orange-color);
+}
+.contact-radio {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #dbdbdb;
+    margin-right: 1rem;
+}
+
+.input-group {
+    position: relative;
+    padding: 0 11vw 0 8vw;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.input-group .placeholder {
+    position: absolute;
+    top: 1rem;
+    left: 3rem;
+    font-size: 1rem;
+    font-family: Pretendard-Bold;
+    color: var(--gray);
+    transition: 0.2s top ease-in-out;
+    opacity: 0;
+}
+
+.input-group.edited .placeholder {
+    top:0;
+    transition: 0.3s top  ease-in-out opacity;
+    font-size: 0.8rem;
+    opacity: 1;
+    padding: 1rem 1.5rem;
+}
+
+.input-group.edited .contact-input::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    opacity: 0;
+}
+.input-group.edited .contact-input:-moz-placeholder {
+    opacity: 0;
+}
+.input-group.edited .contact-input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    opacity: 0;
+}
+
+.input-group.edited .contact-input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    opacity: 0;
+}
+
+.input-group:focus .placeholder {
+    top:0;
+    transition: 0.3s top  ease-in-out opacity;
+    font-size: 16px;
+    opacity: 1;
+}
+
+.contact-input:focus ~ .input-group .placeholder {
+    top:0;
+    transition: 0.3s top  ease-in-out opacity;
+    font-size: 16px;
+    opacity: 1;
+}
+.contact-radio-text {
+    font-size: 3rem;
+    padding: 0 3rem;
+    justify-content: space-around;
+}
+
+.contact-checkbox-text {
+    font-size: 25px;
+}
+
+.btn-send {
+    width: 100%;
+    height: 10vw;
+    border: 5px solid var(--brown-color);
+    background-color: transparent;
+    text-align: center;
+    color: var(--brown-color);
+    font-family: 'Pretendard-Bold';
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px var(--brown-color);
+}
+.btn-send:hover {
+    color: white;
+    background-color: var(--brown-color);
+}
+
+.letter {
+    position: absolute;
+    left: 22px;
+    top: -120px;
+    width: 220px;
+    height: 220px;
+    z-index: -1;
+    -webkit-animation-name: letter; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: letter;
+    animation-duration: 28s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes letter {
+    0%   {top: -90px}
+    50%  {top: -70px}
+    100% {top: -90px}
+}
+
+/* Standard syntax */
+@keyframes letter {
+    from { transform: translate(0px,  -900px); }
+    4%  { transform: translate(1rem, 90px); }
+    8%  { transform: translate(3rem, 8px); }
+    12%  { transform: translate(5em, 95px); }
+    16%  { transform: translate(7rem, 5px); }
+    20%  { transform: translate(9rem, 90px); }
+    24%  { transform: translate(12rem, 8px); }        
+    28%  { transform: translate(15rem, 95px); }
+    32%  { transform: translate(17rem, 15px); }
+    36%  { transform: translate(19rem, 90px); }
+    40%  { transform: translate(22rem, 8px); }    
+    44%  { transform: translate(24rem, 95px); }
+    48%  { transform: translate(26rem, 5px); }    
+    52%  { transform: translate(28rem, 90px); }
+    56%  { transform: translate(30rem, 8px); }    
+    60%  { transform: translate(33rem, 95px); }
+    64%  { transform: translate(36rem, 5px); }
+    68%  { transform: translate(38rem, 90px); }
+    72%  { transform: translate(40rem, 8px); }   
+    76%  { transform: translate(43rem, 95px); }
+    80%  { transform: translate(45rem, 5px); }    
+    84%  { transform: translate(48rem, 90px); }
+    88%  { transform: translate(50rem, 8px); }   
+    92%  { transform: translate(53rem, 95px); }
+    96%  { transform: translate(56rem, 5px); }    
+    to   { transform: translate(61rem, 90px); }    
+}
+
+.custom-modal-content {
+    min-width: 768px;
+    border-radius: 50px;
+    padding: 5px 25px 60px 25px;
+}
+
+.custom-modal-content-close {
+    background-image: none;
+    font-size: 65px;
+    font-family: Pretendard-Thin;
+    color: var(--brown-color) !important;
+    opacity: 1;
+    width: auto;
+    height: auto;
+    background-image: none;
+}
+
+.custom-modal-content-img {
+    width: 230px;
+    height: 80px;
+    margin-bottom: 40px;
+}
+
+.custom-modal-content-text {
+    color: var(--orange-color);
+    text-align: center;
+    font-size: 23px;
+    padding: 0 30px;
+    font-family: Pretendard-Bold;
+}
+
+.rd-container {
+    display: block;
+    position: relative;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    font-size: 1.32rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Pretendard-Regular;
+}
+
+.rd-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4vw;
+    width: 4vw;
+    border: 7px solid #ddd;
+    border-radius: 50%;
+    margin-left: -2.5rem;
+}
+
+.rd-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.rd-container input:checked ~ .checkmark {
+    background-image: url('../../../images/components/body/contact/radio.png');
+    background-repeat: no-repeat;
+    background-size: 4vw 4vw;
+    background-position: center;
+    border: none;
+    margin-left: -2.5rem;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* 수정된 체크복스 -------------------------- */
+
+.ck-container {
+    display: block;
+    position: relative;
+    padding-left: 3rem;
+    margin-bottom: 1rem;
+    margin-right: 3rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-size: 1.16rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Pretendard-Regular;
+}
+
+.ck-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.ck-checkmark {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    border: 7px solid #ddd;
+    border-radius: 0%;
+}
+
+.ck-container:hover input ~ .ck-checkmark {
+    background-color: #ccc;
+}
+
+.ck-container input:checked ~ .ck-checkmark {
+    background-image: url('../../../images/components/body/contact/ckeckbox.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px 32px;
+    border: none;
+}
+
+.ck-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}

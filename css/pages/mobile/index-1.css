@@ -1,0 +1,502 @@
+.App {
+    overflow: hidden;
+}
+
+.header {
+    height: 24.4vw;
+    padding: 7.78vw 6.1vw 7.78vw 5.6vw;
+}
+
+.logo {
+    width: 26.4vw;
+    height: auto;
+}
+
+.bar {
+    width: 7.78vw;
+    height: 1.4vw;
+    border-radius: 1.4vw;
+    margin: 0.83vw 0.56vw 0.83vw 0;
+    transition: 0.4s;
+}
+
+.sidenav-inner {
+    padding: 7.78vw 6.1vw 7.78vw 5.6vw;
+}
+
+.sidenav .closebtn {
+    top: 7.78vw;
+    right: 5.6vw;
+    width: 8.3vw;
+    height: 8.3vw;
+}
+.closebtn p {
+    font-size: 11.1vw;
+    margin-right: 0;
+    margin-bottom: 1.7vw;
+}
+
+.sidenav a {
+    padding: 0;
+    font-size: 7.2vw;
+    margin-bottom: 4.17vw;
+}
+
+.menu-logo {
+    margin-top: 0;
+    width: 26.4vw;
+    height: auto;
+}
+
+.main-slider {
+    width: 100%;
+    padding: 0 5.6vw;
+    height: 114vw;
+}
+
+.carousel-item video {
+    border-radius: 6.94vw;
+    margin-bottom: -2.1%;
+}
+
+.body-container {
+    padding-top: 48vw;
+    margin-top: -25%;
+}
+.carousel-inner {
+    border-radius: 4.17vw;
+}
+.carousel-indicators {
+    bottom: -12.78vw;
+}
+
+.carousel-indicators li {
+    border: 1px solid var(--brown-color);
+    width: 2.78vw;
+    height: 2.78vw;
+    margin-right: 0.56vw;
+}
+
+.about-text {
+    font-size: 4.17vw;
+    margin-bottom: 4.17vw;
+}
+
+.tangle-bouncing-img1 {
+    width: 2.5rem;
+    height: auto;
+}
+.tangle-bouncing-img2 {
+    width: 3rem;
+    height: auto;
+}
+.tangle-bouncing-img3 {
+    width: 2.8rem;
+    height: auto;
+}
+.tangle-bouncing-img4 {
+    width: 3rem;
+    height: auto;
+}
+.tangle-bouncing-img5 {
+    width: 1rem;
+    height: auto;
+}
+.tangle-bouncing-img6 {
+    width: 3rem;
+    height: auto;
+}
+
+.body-container-first-pane-image-range {
+    height: 35.6vw;
+}
+
+.tangle-story-pane {
+    width: 93.3vw;
+    border-radius: 4.17vw;
+    padding: 9.72vw 9.72vw 2.78vw 9.72vw;
+}
+
+.tangle-story-pane-img {
+    width: 62vw;
+    height: 77.2vw;
+    margin-bottom: 5.6vw;
+}
+
+.tangle-story-pane-title {
+    font-size: 5.23vw;
+}
+
+.tangle-story-pane-content {
+    font-size: 3.3vw;
+}
+
+.story-box .circle {
+    background-size: 88% 5.6vw;
+    padding: 1.4vw;
+}
+
+.story-box .crossover {
+    font-size: 3.3vw;
+    background-position-y: 1.9vw;
+    background-size: 44% 2.5vw;
+}
+.story-box .underline {
+    padding: 2.78vw 0;
+    background-size: 48.3vw;
+    background-position-y: 5vw;
+}
+.body-container-first-pane-bottom {
+    margin-top: 20.8vw;
+    height: 66.7vw;
+}
+
+.body-container-first-pane-bottom .line {
+    left: -9.72vw;
+    width: 118%;
+}
+
+.body-container-first-pane-bottom .image-container {
+    margin-top: -2.22vw;
+}
+
+.body-container-first-pane-bottom .mask {
+    top: 0;
+    bottom: 83.3vw;
+    height: 27.8vw;
+}
+
+.body-container-first-pane-bottom .image {
+    position: absolute;
+    top: 0;
+    bottom: unset;
+    width: 100%;
+    height: auto;
+}
+
+.image-container img {
+    width: 43.9vw;
+    height: 35.6vw;
+}
+
+.body-container-first-pane-separator {
+    height: 13.3vw;
+    background-size: auto 5.3vw;
+    animation: linear infinite 2000s flow;
+}
+
+.body-container-product-noodle-first-img {
+    transform: scale(0.4);
+    width: 94.4vw;
+    height: 48.6vw;
+    margin-right: -37.5vw;
+    margin-top: -14.6vw;
+}
+
+.body-container-product-pork-img {
+    width: 50vw;
+    height: 50vw;
+    margin-top: -49.4vw;
+    margin-right: -23.1vw;
+    animation: porkImg 2s linear infinite;
+
+}
+
+.mingle-and-wiggle-with ul li {
+    font-size: 8.33vw !important;
+}
+
+.body-container-second-pane-mingle:last-child {
+    margin-top: -3.3vw;
+}
+
+@keyframes porkImg {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(2.8vw);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.body-container-product-noodle-second-img {
+    margin-left: -45.5vw;
+    width: 93.3vw;
+    height: 45.8vw;
+    position: relative;
+    transform: scale(0.5);
+    margin-top: -8.3vw;
+}
+
+.tangle-bouncing-mingle-img1 {
+    width: 10vw;
+    height: auto;
+}
+
+.tangle-bouncing-mingle-img2 {
+    width: 12vw;
+    height: auto;
+}
+
+.tangle-bouncing-mingle-img3 {
+    width: 11vw;
+    height: auto;
+}
+
+.tangle-bouncing-mingle-img4 {
+    width: 12vw;
+    height: auto;
+}
+
+.tangle-bouncing-mingle-img5 {
+    width: 4vw;
+    height: auto;
+}
+
+.tangle-bouncing-mingle-img6 {
+    width: 12vw;
+    height: auto;
+}
+
+.tangle-bouncing-mingle {
+    margin-top: -35vw;
+    margin-right: 0;
+}
+
+.body-container-product-pane-group {
+    /* margin-top: -13.9vw; */
+}
+
+.body-container-second-pane-advertise-each {
+    margin-bottom: 5.6vw;
+}
+
+.body-container-product-pane-group-each-title {
+    font-size: 5.56vw;
+    line-height: 6.94vw;
+    margin-bottom: 5.6vw;
+}
+
+.body-container-product-pane-group-each-content {
+    font-size: 4.17vw;
+    line-height: 5vw;
+}
+
+.poke {
+    background-image: url("../../../images/usp/poke4.png");
+    width: 32.3vw;
+    height: 32.3vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pot {
+    background-image: url("../../../images/usp/pot5.png");
+    width: 32.3vw;
+    height: 32.3vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.flake {
+    background-image: url("../../../images/usp/flake1.png");
+    width: 32.3vw;
+    height: 32.3vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hand {
+    background-image: url("../../../images/usp/hand1.png");
+    width: 32.3vw;
+    height: 32.3vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.sauce {
+    background-image: url("../../../images/usp/sauce1.png");
+    width: 32.3vw;
+    height: 32.3vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.carousel-feature a {
+    display: none;
+}
+
+.body-container-product-detail {
+    margin-top: -142vw;
+}
+
+.body-container-product-detail-title {
+    font-size: 9.17vw;
+    margin-bottom: 15.3vw;
+}
+
+.body-container-product-detail-noodle-first-img {
+    margin-right: -122vw;
+    margin-top: -150vw;
+    transform: scale(0.4);
+}
+
+.productMaskLeft1 {
+    top: -56.94vw;
+}
+
+.body-container-product-detail-pane:hover {
+    border-radius: 11.1vw;
+}
+
+.body-container-product-detail-pane {
+    width: 45%;
+    margin-right: 5vw;
+    border-radius: 1.4vw;
+    padding: 8vw 0 2.8vw 0;
+}
+
+.body-container-product-detail-pane-img {
+    width: 31.1vw;
+    height: 25.2vw;
+    margin-bottom: 5.6vw;
+}
+
+.body-container-product-detail-pane-title {
+    font-size: 3vw;
+    line-height: 3vw;
+    margin-bottom: 3.6vw;
+}
+
+.body-container-product-detail-pane-btn {
+    font-size: 2.78vw;
+    border: 1px solid var(--brown-color);
+    padding: 1.11vw 3.3vw;
+    margin-bottom: 2.78vw;
+}
+
+.body-container-product-detail-pane-img-second {
+    width: 31.1vw;
+    height: auto;
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+}
+
+.body-container-product-detail-noodle-second-img {
+    transform: scale(0.4);
+    margin-top: -150vw;
+    left: -140vw;
+}
+
+.productMaskLeft2 {
+    top: -56.94vw;
+    height: 69.4vw;
+}
+
+.body-container-follow-pane {
+    padding: 11.1vw 0;
+}
+
+.body-container-follow-pane-logo {
+    width: 43.6vw;
+    height: 14.2vw;
+    margin-bottom: 3.3vw;
+}
+
+.body-container-follow-pane-btn {
+    padding: 1.67vw 3vw;
+    font-size: 2.78vw;
+    border: 1px solid var(--brown-color);
+    font-family: Pretendard-Regular;
+    margin-bottom: 5.6vw;
+}
+
+.body-container-follow-pane-each {
+    border: 1px solid var(--orange-color);
+    width: 31%;
+    height: 26.7vw;
+    border-radius: 4.17vw;
+    margin-right: 1.94vw;
+    margin-bottom: 1.94vw;
+}
+
+.body-container-follow-pane-udpate {
+    font-size: 5vw;
+}
+
+.body-container-follow-pane-udpate-text {
+    font-size: 2.78vw;
+}
+
+.body-container-footer-pane-input {
+    background-size: 60% 1px;
+    margin-top: 0;
+    font-size: 2.78vw;
+    padding-bottom: 1.94vw;
+    margin-bottom: 13.9vw;
+}
+
+.body-container-footer-pane-input-icon {
+    position: absolute;
+    margin: 0;
+    width: 2.5vw;
+    height: 3.3vw;
+    right: 21%;
+    top: 1.39vw;
+}
+
+.body-container-footer-pane-input-text {
+    font-size: 3.61vw;
+    margin-top: 0;
+    margin-bottom: 7.5vw;
+}
+
+.scroll-to-top {
+    right: 3.6vw;
+    width: 8.3vw;
+    height: 19.4vw;
+    background-size: 8.3vw 14.72vw;
+    bottom: -1.39vw;
+}
+
+.scrollToTop {
+    margin-top: -5.6vw;
+    font-size: 3.9vw;
+}
+
+.footer {
+    padding: 0 6.61vw;
+    height: 38.6vw;
+}
+
+.footer-logo {
+    width: 21.7vw;
+    height: 7.6vw;
+    margin-bottom: 1.39vw;
+}
+
+.footer-content {
+    font-size: 2.2vw;
+    margin-bottom: 3.6vw;
+}
+
+.footer-link-text {
+    font-size: 3vw;
+}
+
+.dropbtn {
+    font-size: 3vw;
+    margin-top: 3.3vw;
+}
+
+.dropdown-content a {
+    font-size: 1.9vw;
+}
+
+.faup, .fadown {
+    margin-top: 0.8vw;
+    margin-left: 1.39vw;
+}

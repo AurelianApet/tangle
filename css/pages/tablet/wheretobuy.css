@@ -1,0 +1,30 @@
+.where-text {
+    color: var(--brown-color);
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 8rem;
+    margin-top:0.3rem;
+}
+
+.retailer-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40vw;
+}
+
+.retailer-group-each {
+    width: 30vw;
+    height:12vw;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+/* .retailer-group-each:nth-child(1) {
+    margin-right: 50px;
+} */
+
+.retailer-group-each img {
+    width: 100%;
+}

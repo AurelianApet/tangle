@@ -1,0 +1,88 @@
+.App .container-body {
+    min-width: 100vw;
+}
+
+.body-container-footer {
+  height: 26.09vw;
+  padding-top: 2.6vw;
+  background-color: var(--orange-color);
+    margin-top: -1.36vw;
+}
+
+.body-container-footer p {
+    cursor: url("../../images/components/body/cursor-2.png"), auto !important;
+}
+.body-container-footer #footerFlow {
+}
+
+.body-container-footer div p {
+    font-size: 1.15vw;
+    font-family: "Pretendard-Bold";
+}
+
+.body-container-footer-select-box {
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 3px;
+    height: 1.5625vw;
+    margin-top: 1.5625vw;
+    font-family: "Pretendard-Light";
+}
+
+.body-container-footer-logo-img {
+    margin-bottom: 1.823vw;    
+    cursor: url("../../images/components/body/cursor-2.png"), auto !important;
+}
+
+.body-container-footer-com {
+    font-size: 0.73vw !important;
+    letter-spacing: 1px ;
+    font-family: "Pretendard-ExtraLight"!important;
+}
+
+.body-container-footer-web-img {
+    width: 1.77vw;
+    height: 1.77vw;
+    margin-top: 1.5625vw;
+    cursor: url("../../images/components/body/cursor-2.png"), auto !important;
+}
+
+.contact-title {
+    margin-bottom: 2.6vw;
+}
+
+.policy_text{
+    color: var(--brown-color);
+    font-size: 1.09vw;
+    margin-left: 8.073vw;
+    margin-right: 8.073vw;
+    margin-top: 0.52vw;
+    text-align: left;
+    font-family: Pretendard-Regular;
+    word-break: keep-all;
+}
+.title_heading{
+    color: var(--brown-color);
+    margin-top: 3.125vw;
+    font-size: 1.15vw;
+    margin-bottom: 1.04vw;
+    font-family: Pretendard-Regular;
+}
+
+.policy-table {
+    padding: 2.6vw 8.073vw 0 8.073vw;
+}
+
+.policy-table th,td {
+    color: var(--brown-color);
+    font-family: Pretendard-Light;
+    border: 1px solid var(--brown-color);
+}
+.policy-table th {
+    border: 1px solid var(--brown-color) !important;
+    vertical-align: middle !important;
+}
+.policy-table td {
+    border: 1px solid var(--brown-color);
+}

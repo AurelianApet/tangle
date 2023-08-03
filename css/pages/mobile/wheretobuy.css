@@ -1,0 +1,31 @@
+.where-text {
+    color: var(--brown-color);
+    text-align: center;
+    margin-top: 2.78vw;
+    font-size: 2.78vw;
+    margin-bottom: 16.7vw;
+}
+
+.retailer-group {
+    padding: 0 0px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12.5vw;
+}
+
+.retailer-group-each {
+    width: 30%;
+    border: 1px solid grey;
+    border-radius: 4.17vw;
+    padding: 2.78vw;
+    display: flex;
+    align-items: center;
+}
+
+.retailer-group-each:nth-child(1) {
+    margin-right: 0px;
+}
+
+.retailer-group-each img {
+    width: 100%;
+}

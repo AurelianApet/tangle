@@ -1,0 +1,38 @@
+.policy {
+    padding: 0 6.94vw;
+    margin-top: 4.44vw;
+}
+
+.policy_text {
+    color: var(--brown-color);
+    font-size: 2.78vw;
+}
+
+.title_heading {
+    margin-top: 4.44vw;
+    margin-bottom: 4.44vw;
+    color: var(--brown-color);
+    font-size: 2.78vw;
+    text-align: center;
+}
+
+.policy-table {
+    padding: 6.94vw 0 0 0;
+    border-collapse: collapse;
+}
+
+.policy-table th, td {
+    color: var(--brown-color);
+    vertical-align: text-top !important;
+    border: 1px solid var(--brown-color) !important;
+    font-size: 2.5vw;
+}
+
+.policy-table th {
+    border: 1px solid var(--brown-color) !important;
+    vertical-align: middle !important;
+}
+
+.policy-table td {
+    border: 1px solid var(--brown-color);
+}
